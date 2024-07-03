@@ -5,32 +5,34 @@ description: Skal være første info-siden, heis-pitchen!
 url: https://data.norge.no/about
 ---
 
-# Heis-pitch
+## Om Felles datakatalog
 
-Dere skal lage en offentlig tjeneste, og trenger data fra andre i denne tjenesten. Burde det ikke være en enklere måte å finne ut hvor denne dataen befinner seg, enn å kjenne halve offentlig sektor og vite nøyaktig hvem du skal sende en epost til? Dette skal en _datakatalog_ løse: det er den definitive oversikten over hvilke data som fins, hvem som sitter på den, og hvordan du kan ta den i bruk.
+Ser du etter data? Burde det ikke være enklere å finne dataene enn å måtte kontakte halve offentlig sektor? Dette er det Felles datakatalog prøver å løse:
+
+Felles datakatalog (FDK) gir en omfattende oversikt over datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser i offentlig sektor, inkludert data med juridiske begrensninger som taushetsplikt eller personopplysninger. Katalogen hjelper deg med å oppdage, vurdere og ta i bruk data ved å tydeliggjøre tilgjengelighet, dataeiere og bruksmuligheter. Den viser om dataene er offentlig tilgjengelige eller krever spesifikke tillatelser, samt hvordan dataene er relatert og hva de betyr. FDK tilbyr også registreringsløsninger for datasett, begreper, API-er og tjenester.
+
+Innholdet i Felles datakatalog leveres av ulike offentlige og private virksomheter. Digitaliseringsdirektoratet er ansvarlig for drift og utvikling av nettstedet.
 
 ## Formål
 
-Felles datakatalog – data.norge.no er det offentlige nettstedet som lar deg oppdage, evaluere og få tilgang til data.
+Felles datakatalog – data.norge.no gir en oversikt over hvilke data virksomheter har og kan dele. Katalogen tilrettelegger for at virksomhetene kan etterfølge åpne data-direktivet ([ODD](https://www.digdir.no/datadeling/oversikt-over-eu-regelverk-om-deling-og-bruk-av-data/3251#pne_datadirektivetopen_data_directive_odd)), og gir brukerne enklere tilgang til data. Katalogen fremmer også rettferdige konkurransevilkår ved å muliggjøre gjenbruk av data for både kommersielle og ikke-kommersielle formål.
 
-Databeskrivelsene blir levert av de enkelte virksomhetene, offentlige og private. Digitaliseringsdirektoratet er ansvarlig for drift og utvikling av nettstedet.
+## Ressursene vi tilbyr
 
-## Hvilke ressurser tilbyr vi
-
-- Datasettkatalogen: (lenke)
-- Begrepskatalogen: (lenke)
-- API-katalogen: (lenke)
-- Informasjonsmodellkatalogen: (lenke)
+- [Datasettkatalogen](https://data.norge.no/datasets)
+- [Begrepskatalogen](https://data.norge.no/concepts)
+- [API-katalogen](https://data.norge.no/data-services)
+- [Informasjonsmodellkatalogen](https://data.norge.no/information-models)
 - Tjenestekatalogen: (lenke)
 - Hendelseskatalogen: (lenke)
 
 ## Søk
 
-Hovedfunksjonen i datakatalogen er søket, som gjør det mulig å finne den dataen eller informasjonen du ser etter. Du kan bruke det kunstig intelligens-drevne søket, eller standard tekstsøk med avanserte filtre.
+Hovedfunksjonen i datakatalogen er søket, som gjør det mulig å finne den dataen eller informasjonen du ser etter. Du kan bruke det kunstig intelligens-drevne søket, eller standard tekstsøk med avanserte filtre. Les mer om søke-alternativene her(lenke).
 
 ## Vil du vite mer?
 
 - Finne data (lenke)
 - Publisere metadata (lenke)
-- Teknisk dokumentasjon
-- Nettsamfunn/datalandsbyen
+- [Teknisk dokumentasjon](https://informasjonsforvaltning.github.io/)
+- [Nettsamfunn - Datalandsbyen.no](https://datalandsbyen.norge.no/)

@@ -89,10 +89,15 @@ Datajegeren er en tjeneste som hjelper deg med å finne og få tilgang til datas
 
 ## Hvem har ansvar for hva på data.norge.no
 
-[Skrive noe om hvilken type informasjon virksomhetene er ansvarlig for, og hvilken informasjon Digdir ved data.norge.no er ansvarlig for].
+### Datatilbyderne
 
+Virksomhetene som eier dataene som er beskrevet på data.norge.no har ansvar for selve innholdet i beskrivelsene og for at dataene du får tilgang til stemmer overens med beskrivelsene. 
 
+Hvis du finner noe feil med beskrivelsene eller tilgangen til dataene, kan du kontakte virksomheten som eier beskrivelsen direkte. Kontaktinformasjon vil som regel være knyttet til beskrivelsen. Hvis du er logget inn i Datalandsbyen, kan du også legge igjen en kommentar på selve beskrivelsen på data.norge.no. Denne kommentaren vil vises både på data.norge.no og i Datalandsbyen. Slike kommentarer og påfølgende diskusjon kan være nyttig for andre brukere som trenger de samme dataene som deg. 
 
+### Digitaliseringsdirektoratet
+
+Digitaliseringsdirektoratet har ansvar for informasjon om når beskrivelser ble publisert på data.norge.no, metadatakvalitet, Datajegeren, KI-oversikt, informasjonssider og at de tekniske løsningene på data.norge.no og Datalandsbyen fungerer som de skal. Digitaliseringsdirektoratet følger også opp kommentarer i Datalandsbyen og purrer på virksomheter som ikke svarer opp kommentarer knyttet til beskrivelser i katalogen. 
 
 #
 

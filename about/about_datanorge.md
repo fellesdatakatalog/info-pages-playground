@@ -11,7 +11,7 @@ Dere skal lage en offentlig tjeneste, og trenger data fra andre i denne tjeneste
 
 ## Formål
 
-Felles datakatalog – data.norge.no er det offentlige nettstedet som lar deg oppdage, evaluere og få tilgang til data.
+Data.norge.no er det offentlige nettstedet som lar deg oppdage, evaluere og få tilgang til data.
 
 Databeskrivelsene blir levert av de enkelte virksomhetene, offentlige og private. Digitaliseringsdirektoratet er ansvarlig for drift og utvikling av nettstedet.
 

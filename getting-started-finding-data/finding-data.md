@@ -21,7 +21,7 @@ Prøv f.eks. "Hvilke områder i Norge er vernet?"
 
 ### Standard søk med filter
 
-På data.norge.no/search-all finner du et tekstsøk med muligheter for filtrering. Her kan du søke etter titler, beskrivelser og nøkkelord i databeskrivelsene. For å finne de dataene du leter etter, kan du bruke ulike filtre, inkludert filtrering etter ressurstype. Du velger ressurstype ved å bruke fanene under søkefeltet.
+På data.norge.no/search-all finner du et tekstsøk med muligheter for filtrering. Her kan du søke etter titler, beskrivelser og søkeord i databeskrivelsene. For å avgrense søket ditt, kan du bruke ulike filtre. Hvilke filtre som tilbys avhenger av ressurstype. Du velger ressurstype ved å bruke fanene under søkefeltet. Resultatet kan sorteres etter relevans eller publiseringsdato.
 
 ### SPARQL
 
@@ -91,14 +91,14 @@ Datajegeren er en tjeneste som hjelper deg med å finne og få tilgang til datas
 
 ### Datatilbyderne
 
-Virksomhetene som eier dataene som er beskrevet på data.norge.no har ansvar for selve innholdet i beskrivelsene og for at dataene du får tilgang til stemmer overens med beskrivelsene. 
+Virksomhetene som eier dataene som er beskrevet på data.norge.no har ansvar for selve innholdet i beskrivelsene og for at dataene du får tilgang til stemmer overens med beskrivelsene.
 
-Hvis du finner noe feil med beskrivelsene eller tilgangen til dataene, kan du kontakte virksomheten som eier beskrivelsen direkte. Kontaktinformasjon vil som regel være knyttet til beskrivelsen. Hvis du er logget inn i Datalandsbyen, kan du også legge igjen en kommentar på selve beskrivelsen på data.norge.no. Denne kommentaren vil vises både på data.norge.no og i Datalandsbyen. Slike kommentarer og påfølgende diskusjon kan være nyttig for andre brukere som trenger de samme dataene som deg. 
+Hvis du finner noe feil med beskrivelsene eller tilgangen til dataene, kan du kontakte virksomheten som eier beskrivelsen direkte. Kontaktinformasjon vil som regel være knyttet til beskrivelsen. Hvis du er logget inn i Datalandsbyen, kan du også legge igjen en kommentar på selve beskrivelsen på data.norge.no. Denne kommentaren vil vises både på data.norge.no og i Datalandsbyen. Slike kommentarer og påfølgende diskusjon kan være nyttig for andre brukere som trenger de samme dataene som deg.
 
 ### Digitaliseringsdirektoratet
 
-Digitaliseringsdirektoratet har ansvar for informasjon om når beskrivelser ble publisert på data.norge.no, metadatakvalitet, Datajegeren, KI-oversikt, informasjonssider og at de tekniske løsningene på data.norge.no og Datalandsbyen fungerer som de skal. Digitaliseringsdirektoratet følger også opp kommentarer i Datalandsbyen og purrer på virksomheter som ikke svarer opp kommentarer knyttet til beskrivelser i katalogen. 
+Digitaliseringsdirektoratet har ansvar for informasjon om når beskrivelser ble publisert på data.norge.no, metadatakvalitet, Datajegeren, KI-oversikt, informasjonssider og at de tekniske løsningene på data.norge.no og Datalandsbyen fungerer som de skal. Digitaliseringsdirektoratet følger også opp kommentarer i Datalandsbyen og purrer på virksomheter som ikke svarer opp kommentarer knyttet til beskrivelser i katalogen.
 
 #
 
-[Du kan lese mer om å finne og vurdere data  på Digitaliseringsdirektoratets nettsider.](https://www.digdir.no/datadeling/finne-og-vurdere-data/2256#hvor_kan_du_finne_dataene)
+[Du kan lese mer om å finne og vurdere data på Digitaliseringsdirektoratets nettsider.](https://www.digdir.no/datadeling/finne-og-vurdere-data/2256#hvor_kan_du_finne_dataene)

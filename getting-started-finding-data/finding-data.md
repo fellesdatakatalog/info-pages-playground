@@ -11,17 +11,18 @@ Data.norge.no gir en omfattende oversikt over datasett, begreper, API-er, inform
 
 ## Søk
 
-Felles datakatalog tilbyr tre forskjellige måter å søke etter data på: standard tekstsøk med filtrering, Kunstig intelligens-søk og SPARQL-spørring.
+Felles datakatalog tilbyr tre forskjellige måter å søke etter data på: standard tekstsøk med filtrering, kunstig intelligens-søk og SPARQL-spørring.
 
 ### Kunstig intelligens-søk (KI-søk)
 
 KI-søket bruker metadata fra data.norge.no og hjelper deg med å finne datasett. Ved å bruke naturlig språk kan du søke fritt uten å måtte kjenne til spesifikke datasettnavn, fagtermer eller tekniske formater.
 Prøv f.eks. "Hvilke områder i Norge er vernet?"
-[Du kan lese teknisk informasjon om KI-søket på data.norge.no her.](https://github.com/Informasjonsforvaltning/fdk-llm-search-service).
+
+[Du kan lese teknisk informasjon om KI-søket på data.norge.no her](https://github.com/Informasjonsforvaltning/fdk-llm-search-service).
 
 ### Standard søk med filter
 
-På data.norge.no/search-all finner du et tekstsøk med muligheter for filtrering. Her kan du søke etter titler, beskrivelser og søkeord i databeskrivelsene. For å avgrense søket ditt, kan du bruke ulike filtre. Hvilke filtre som tilbys avhenger av ressurstype. Du velger ressurstype ved å bruke fanene under søkefeltet. Resultatet kan sorteres etter relevans eller publiseringsdato.
+På [data.norge.no/search-all](data.norge.no/search-all) finner du et tekstsøk med muligheter for filtrering. Her kan du søke etter titler, beskrivelser og søkeord i databeskrivelsene. For å avgrense søket ditt, kan du bruke ulike filtre. Hvilke filtre som tilbys avhenger av ressurstype. Du velger ressurstype ved å bruke fanene under søkefeltet. Resultatet kan sorteres etter relevans eller publiseringsdato.
 
 ### SPARQL
 
@@ -65,11 +66,11 @@ WHERE {​​​​​​​​​​​​​​
 
 ## Finner du ikke det du leter etter?
 
-Vet du ikke om data du ser etter finnes? Er det data du trenger som ikke er delt ennå? Hvis datasettet ikke er beskrevet på data.norge.no eller på dataeiers nettsider, bør du gå i dialog med de som tilbyr dem og oppfordre dem til å dele. Du kan også bruke Digdirs tjenester, ved å spørre Datajegeren eller etterspørre datasett og API-er i Datalandsbyen.
+Vet du ikke om data du ser etter finnes eller er det data du trenger som ikke er delt ennå? Hvis datasettet ikke er beskrevet på Data.norge.no eller på dataeiers nettsider, bør du gå i dialog med de som tilbyr dem og oppfordre dem til å dele. Du kan bruke Digdirs tjenester til dette, ved å spørre Datajegeren eller etterspørre datasett og API-er i Datalandsbyen.
 
 ### Datalandsbyen: Etterspørre datasett og API-er
 
-Datalandsbyen er et nettforum dedikert til dialog mellom tilbydere og konsumenter av data. Her kan du etterlyse datasett og API-er du ønsker tilgang til eller har spørsmål om. Du kan også be om utvidelser av eksisterende datasett og API-er, for eksempel mer tilgjengelig data eller endringer i API-funksjonalitet. Besøk brukerforumet [Datalandsbyen](https://datalandsbyen.norge.no/category/6/ettersp%C3%B8r-datasett-og-api-er) for å legge inn din etterspørsel. En veiledning om hvordan du går frem finner du [her](https://datalandsbyen.norge.no/topic/56/ettersp%C3%B8rr-data-og-api).
+Datalandsbyen er et nettforum dedikert til dialog mellom tilbydere og konsumenter av data. Her kan du etterlyse datasett og API-er du ønsker tilgang til eller har spørsmål om. Du kan også be om utvidelser av eksisterende datasett og API-er, for eksempel mer tilgjengelig data eller endringer i API-funksjonalitet. Besøk brukerforumet [Datalandsbyen](https://datalandsbyen.norge.no/category/6/ettersp%C3%B8r-datasett-og-api-er) for å legge inn din etterspørsel. Se [veileder for hvordan etterspørre data i Datalandsbyen](https://datalandsbyen.norge.no/topic/56/ettersp%C3%B8rr-data-og-api).
 
 [Data.norge.no tilbyr en oversikt over alle publiserte etterspørsler i Datalandsbyen](https://data.norge.no/requests).
 

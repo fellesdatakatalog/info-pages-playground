@@ -7,7 +7,7 @@ url: https://data.norge.no/about
 
 ## Om Data.norge.no
 
-Leter du etter data? Nå er det enklere enn noensinne å finne det du trenger, uten å måtte navigere gjennom et virvar av offentlige etater.
+Leter du etter data? Nå er det enklere enn noensinne å finne det du trenger, uten å måtte navigere gjennom et virvar av offentlige etater!
 
 Data.norge.no gir en omfattende oversikt over datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser i offentlig sektor, inkludert data med juridiske begrensninger som taushetsplikt eller personopplysninger. Her får du hjelp til å oppdage, vurdere og ta i bruk data, med tydelig informasjon om tilgjengelighet, dataeiere og bruksmuligheter. Du får vite om dataene er offentlig tilgjengelige eller krever spesifikke tillatelser, samt hvordan dataene er relatert og hva de betyr. Data.norge.no tilbyr også løsninger for publisering av datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser.
 

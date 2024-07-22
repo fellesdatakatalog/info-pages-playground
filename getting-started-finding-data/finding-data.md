@@ -11,11 +11,11 @@ Data.norge.no gir en omfattende oversikt over datasett, begreper, API-er, inform
 
 ## Søk
 
-Felles datakatalog tilbyr tre forskjellige måter å søke etter data på: standard tekstsøk med filtrering, kunstig intelligens-søk og SPARQL-spørring.
+Data.norge.no tilbyr tre forskjellige måter å søke etter data på: Standard tekstsøk med filtrering, kunstig intelligens-søk og SPARQL-spørring.
 
 ### Kunstig intelligens-søk (KI-søk)
 
-KI-søket bruker metadata fra data.norge.no og hjelper deg med å finne datasett. Ved å bruke naturlig språk kan du søke fritt uten å måtte kjenne til spesifikke datasettnavn, fagtermer eller tekniske formater.
+KI-søket bruker metadata fra Data.norge.no og hjelper deg med å finne datasett. Ved å bruke naturlig språk kan du søke fritt uten å måtte kjenne til spesifikke datasettnavn, fagtermer eller tekniske formater.
 Prøv f.eks. "Hvilke områder i Norge er vernet?"
 
 [Du kan lese teknisk informasjon om KI-søket på data.norge.no her](https://github.com/Informasjonsforvaltning/fdk-llm-search-service).
@@ -34,15 +34,13 @@ På [data.norge.no/search-all](data.norge.no/search-all) finner du et tekstsøk 
 
 #### Eksempel på bruk av SPARQL
 
-Kopiert fra developers handbook, vet ikke om det er et eksempel som passer bedre
-
 Få oversikt over hvilke egenskaper som finnes:
 
 ```sparql
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 SELECT *
 WHERE {
-	?dataset a dcat:Dataset .
+	?dataset a dcat:Dataset.
     ?dataset ?prop ?value.
 }
 ```
@@ -68,6 +66,12 @@ WHERE {​​​​​​​​​​​​​​
 
 Vet du ikke om data du ser etter finnes eller er det data du trenger som ikke er delt ennå? Hvis datasettet ikke er beskrevet på Data.norge.no eller på dataeiers nettsider, bør du gå i dialog med de som tilbyr dem og oppfordre dem til å dele. Du kan bruke Digdirs tjenester til dette, ved å spørre [Datajegeren](https://data.norge.no/forms/nb/data-hunter) eller etterspørre datasett og API-er i [Datalandsbyen](https://datalandsbyen.norge.no).
 
+### Datajegeren: Finn og få tilgang til offentlige datasett
+
+Datajegeren er en tjeneste som hjelper deg med å finne og få tilgang til datasett fra offentlig sektor. Selv om mange datasett er tilgjengelige via data.norge.no, er ikke katalogen komplett.
+
+[Du kan be Datajegeren om hjelp via et enkelt kontaktskjema](https://data.norge.no/forms/nb/data-hunter). Her kan du beskrive hva du leter etter. Noen felt er obligatoriske og noen kan du velge å bruke for å spesifisere forespørselen din. Når skjemaet sendes inn, går det direkte til ansatte i Digitaliseringsdirektoratet som undersøker hvilken etat som eier dataene og tar seg av den nødvendige kontakten for å skaffe dem.
+
 ### Datalandsbyen: Etterspørre datasett og API-er
 
 Datalandsbyen er et nettforum dedikert til dialog mellom tilbydere og konsumenter av data. Her kan du etterlyse datasett og API-er du ønsker tilgang til eller har spørsmål om. Du kan også be om utvidelser av eksisterende datasett og API-er, for eksempel mer tilgjengelig data eller endringer i API-funksjonalitet. Besøk brukerforumet [Datalandsbyen](https://datalandsbyen.norge.no/category/6/ettersp%C3%B8r-datasett-og-api-er) for å legge inn din etterspørsel. Se [veileder for hvordan etterspørre data i Datalandsbyen](https://datalandsbyen.norge.no/topic/56/ettersp%C3%B8rr-data-og-api).
@@ -81,12 +85,6 @@ Hensikten med nettforumet [Datalandsbyen](https://datalandsbyen.norge.no) er å 
 I Datalandsbyen kan ulike brukergrupper inspirere hverandre med nyttige tips og spørsmål, diskutere bruken av data og API-er, samt etterlyse spesifikke datasett de ønsker tilgang til. Forumet gir også mulighet til å vise eksempler på hvordan data benyttes i tjenester og applikasjoner, samt å dele relevante arrangementer.
 
 Datalandsbyen er åpen for alle, men for å delta aktivt må man registrere seg. Målet er å fremme verdiskapende bruk av data for samfunnet gjennom økt kunnskap, åpenhet og innovasjon.
-
-### Datajegeren: Finn og få tilgang til offentlige datasett
-
-Datajegeren er en tjeneste som hjelper deg med å finne og få tilgang til datasett fra offentlig sektor. Selv om mange datasett er tilgjengelige via data.norge.no, er ikke katalogen komplett.
-
-[Du kan be Datajegeren om hjelp via et enkelt kontaktskjema](https://data.norge.no/forms/nb/data-hunter). Her kan du beskrive hva du leter etter. Noen felt er obligatoriske og noen kan du velge å bruke for å spesifisere forespørselen din. Når skjemaet sendes inn, går det direkte til ansatte i Digitaliseringsdirektoratet som undersøker hvilken etat som eier dataene og tar seg av den nødvendige kontakten for å skaffe dem.
 
 ## Hvem har ansvar for hva på data.norge.no
 

@@ -7,11 +7,11 @@ url: https://data.norge.no/about
 
 ## Om Data.norge.no
 
-Ser du etter data? Burde det ikke være enklere å finne dataene enn å måtte kontakte halve offentlig sektor? Dette er det Data.norge.no prøver å løse:
+Leter du etter data? Nå er det enklere enn noensinne å finne det du trenger, uten å måtte navigere gjennom et virvar av offentlige etater.
 
-Data.norge.no gir en omfattende oversikt over datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser i offentlig sektor, inkludert data med juridiske begrensninger som taushetsplikt eller personopplysninger. Her får du hjelp til å oppdage, vurdere og ta i bruk data, gjennom tydelig informasjon om tilgjengelighet, dataeiere og bruksmuligheter. Du får vite om dataene er offentlig tilgjengelige eller krever spesifikke tillatelser, samt hvordan dataene er relatert og hva de betyr. Data.norge.no tilbyr også løsninger for å publisere datasett, begreper, API-er, informasjonsmodeller, tjenester, hendelser.
+Data.norge.no gir en omfattende oversikt over datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser i offentlig sektor, inkludert data med juridiske begrensninger som taushetsplikt eller personopplysninger. Her får du hjelp til å oppdage, vurdere og ta i bruk data, med tydelig informasjon om tilgjengelighet, dataeiere og bruksmuligheter. Du får vite om dataene er offentlig tilgjengelige eller krever spesifikke tillatelser, samt hvordan dataene er relatert og hva de betyr. Data.norge.no tilbyr også løsninger for publisering av datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser.
 
-Innholdet i Data.norge.no leveres av ulike offentlige og private virksomheter. Digitaliseringsdirektoratet er ansvarlig for drift og utvikling av nettstedet.
+Innholdet på Data.norge.no leveres av ulike offentlige og private virksomheter. Digitaliseringsdirektoratet er ansvarlig for drift og utvikling av nettstedet.
 
 ## Formål
 
@@ -23,15 +23,15 @@ Data.norge.no gir en oversikt over hvilke data virksomheter har og kan dele. Kat
 - [Begrepskatalogen](https://data.norge.no/concepts)
 - [API-katalogen](https://data.norge.no/data-services)
 - [Informasjonsmodellkatalogen](https://data.norge.no/information-models)
-- [Tjeneste- og hendelseskatalogen] (https://data.norge.no/public-services-and-events)
+- [Tjeneste- og hendelseskatalogen](https://data.norge.no/public-services-and-events)
 
 ## Søk
 
-Hovedfunksjonen på Data.norge.no er søket, som gjør det mulig å finne den dataen eller informasjonen du ser etter. Du kan bruke det kunstig intelligens-drevne søket, eller standard tekstsøk med avanserte filtre. Les mer om søke-alternativene her(lenke).
+Hovedfunksjonen på Data.norge.no er søket, som gjør det mulig å finne den dataen eller informasjonen du ser etter. Du kan bruke det kunstig intelligens-drevne søket, eller standard tekstsøk med avanserte filtre. [Les mer om søke-alternativene](lenke).
 
 ## Vil du vite mer?
 
-- Finne data (lenke)
-- Publisere metadata (lenke)
+- [Finne data](lenke)
+- [Publisere beskrivelser](lenke)
 - [Teknisk dokumentasjon](https://informasjonsforvaltning.github.io/)
 - [Nettsamfunn - Datalandsbyen](https://datalandsbyen.norge.no/)

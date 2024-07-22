@@ -5,17 +5,17 @@ description: Skal være første info-siden, heis-pitchen!
 url: https://data.norge.no/about
 ---
 
-## Om Felles datakatalog
+## Om Data.norge.no
 
-Ser du etter data? Burde det ikke være enklere å finne dataene enn å måtte kontakte halve offentlig sektor? Dette er det Felles datakatalog prøver å løse:
+Ser du etter data? Burde det ikke være enklere å finne dataene enn å måtte kontakte halve offentlig sektor? Dette er det Data.norge.no prøver å løse:
 
-Felles datakatalog (FDK) gir en omfattende oversikt over datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser i offentlig sektor, inkludert data med juridiske begrensninger som taushetsplikt eller personopplysninger. Katalogen hjelper deg med å oppdage, vurdere og ta i bruk data ved å tydeliggjøre tilgjengelighet, dataeiere og bruksmuligheter. Den viser om dataene er offentlig tilgjengelige eller krever spesifikke tillatelser, samt hvordan dataene er relatert og hva de betyr. FDK tilbyr også registreringsløsninger for datasett, begreper, API-er og tjenester.
+Data.norge.no gir en omfattende oversikt over datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser i offentlig sektor, inkludert data med juridiske begrensninger som taushetsplikt eller personopplysninger. Her får du hjelp til å oppdage, vurdere og ta i bruk data, gjennom tydelig informasjon om tilgjengelighet, dataeiere og bruksmuligheter. Du får vite om dataene er offentlig tilgjengelige eller krever spesifikke tillatelser, samt hvordan dataene er relatert og hva de betyr. Data.norge.no tilbyr også løsninger for å publisere datasett, begreper, API-er, informasjonsmodeller, tjenester, hendelser.
 
-Innholdet i Felles datakatalog leveres av ulike offentlige og private virksomheter. Digitaliseringsdirektoratet er ansvarlig for drift og utvikling av nettstedet.
+Innholdet i Data.norge.no leveres av ulike offentlige og private virksomheter. Digitaliseringsdirektoratet er ansvarlig for drift og utvikling av nettstedet.
 
 ## Formål
 
-Felles datakatalog – data.norge.no gir en oversikt over hvilke data virksomheter har og kan dele. Katalogen tilrettelegger for at virksomhetene kan etterfølge åpne data-direktivet ([ODD](https://www.digdir.no/datadeling/oversikt-over-eu-regelverk-om-deling-og-bruk-av-data/3251#pne_datadirektivetopen_data_directive_odd)), og gir brukerne enklere tilgang til data. Katalogen fremmer også rettferdige konkurransevilkår ved å muliggjøre gjenbruk av data for både kommersielle og ikke-kommersielle formål.
+Data.norge.no gir en oversikt over hvilke data virksomheter har og kan dele. Katalogen tilrettelegger for at virksomhetene kan etterfølge åpne data-direktivet ([ODD](https://www.digdir.no/datadeling/oversikt-over-eu-regelverk-om-deling-og-bruk-av-data/3251#pne_datadirektivetopen_data_directive_odd)), og gir brukerne enklere tilgang til data. Katalogen fremmer også rettferdige konkurransevilkår ved å muliggjøre gjenbruk av data for både kommersielle og ikke-kommersielle formål.
 
 ## Ressursene vi tilbyr
 
@@ -23,16 +23,15 @@ Felles datakatalog – data.norge.no gir en oversikt over hvilke data virksomhet
 - [Begrepskatalogen](https://data.norge.no/concepts)
 - [API-katalogen](https://data.norge.no/data-services)
 - [Informasjonsmodellkatalogen](https://data.norge.no/information-models)
-- Tjenestekatalogen: (lenke)
-- Hendelseskatalogen: (lenke)
+- [Tjeneste- og hendelseskatalogen] (https://data.norge.no/public-services-and-events)
 
 ## Søk
 
-Hovedfunksjonen i datakatalogen er søket, som gjør det mulig å finne den dataen eller informasjonen du ser etter. Du kan bruke det kunstig intelligens-drevne søket, eller standard tekstsøk med avanserte filtre. Les mer om søke-alternativene her(lenke).
+Hovedfunksjonen på Data.norge.no er søket, som gjør det mulig å finne den dataen eller informasjonen du ser etter. Du kan bruke det kunstig intelligens-drevne søket, eller standard tekstsøk med avanserte filtre. Les mer om søke-alternativene her(lenke).
 
 ## Vil du vite mer?
 
 - Finne data (lenke)
 - Publisere metadata (lenke)
 - [Teknisk dokumentasjon](https://informasjonsforvaltning.github.io/)
-- [Nettsamfunn - Datalandsbyen.no](https://datalandsbyen.norge.no/)
+- [Nettsamfunn - Datalandsbyen](https://datalandsbyen.norge.no/)

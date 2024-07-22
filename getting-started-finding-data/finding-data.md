@@ -7,7 +7,7 @@ url: https://data.norge.no/getting-started/finding-data
 
 # Finne data
 
-Data.norge.no gir en omfattende oversikt over datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser i offentlig sektor, inkludert data med juridiske begrensninger som taushetsplikt eller personopplysninger. Hensikten med denne oversikten er å gjøre det lettere for deg å finne, forstå og ta i bruk data fra offentlig sektor. For å finne frem blant alle beskrivelsene, tilbyr Data.norge.no forskjellige måter å søke på. Dersom du ikke finner dataen du leter etter, kan du registrere en etterspørsel.
+Data.norge.no gir en omfattende oversikt over datasett, begreper, API-er, informasjonsmodeller, tjenester og hendelser i offentlig sektor, inkludert data med juridiske begrensninger som taushetsplikt eller personopplysninger. Hensikten med denne oversikten er å gjøre det lettere for deg å finne, forstå og ta i bruk data fra offentlig sektor. For å finne frem blant alle beskrivelsene, tilbyr Data.norge.no forskjellige måter å søke på. Dersom du ikke finner dataen du leter etter, kan du [registrere en etterspørsel](https://data.norge.no/requests).
 
 ## Søk
 
@@ -30,7 +30,7 @@ På [data.norge.no/search-all](data.norge.no/search-all) finner du et tekstsøk 
 
 #### Hva er SPARQL?
 
-[SPARQL](https://www.w3.org/TR/rdf-sparql-query/) er et spørrespråk som brukes til å hente data lagret i RDF-format. RDF Resource Description Framework) er en standardmodell for å beskrive data og ressurser på semantisk web. [Du kan lese mer om RDF her](lenke).
+[SPARQL](https://www.w3.org/TR/rdf-sparql-query/) er et spørrespråk som brukes til å hente data lagret i RDF-format. RDF Resource Description Framework) er en standardmodell for å beskrive data og ressurser på semantisk web. [Du kan lese mer om RDF her](https://www.w3.org/RDF).
 
 #### Eksempel på bruk av SPARQL
 
@@ -66,7 +66,7 @@ WHERE {​​​​​​​​​​​​​​
 
 ## Finner du ikke det du leter etter?
 
-Vet du ikke om data du ser etter finnes eller er det data du trenger som ikke er delt ennå? Hvis datasettet ikke er beskrevet på Data.norge.no eller på dataeiers nettsider, bør du gå i dialog med de som tilbyr dem og oppfordre dem til å dele. Du kan bruke Digdirs tjenester til dette, ved å spørre Datajegeren eller etterspørre datasett og API-er i Datalandsbyen.
+Vet du ikke om data du ser etter finnes eller er det data du trenger som ikke er delt ennå? Hvis datasettet ikke er beskrevet på Data.norge.no eller på dataeiers nettsider, bør du gå i dialog med de som tilbyr dem og oppfordre dem til å dele. Du kan bruke Digdirs tjenester til dette, ved å spørre [Datajegeren](https://data.norge.no/forms/nb/data-hunter) eller etterspørre datasett og API-er i [Datalandsbyen](https://datalandsbyen.norge.no).
 
 ### Datalandsbyen: Etterspørre datasett og API-er
 

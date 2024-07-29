@@ -1,9 +1,8 @@
 ---
 info_en: Page about "Getting started - Publishing descriptions"
-info_no: Side om "Komme i gang - Publisere beskrivelser/kataloger"
+info_no: Side om "Komme i gang - Publisere beskrivelser/kataloger via høsteadmin-grensesnittet"
 description: Skal gi overordnet informasjon om hvordan publisere beskrivelser/kataloger til data.norge.no
-url: https://data.norge.no/getting-started/publishing-data
-note: Vurder å slå sammen med "Creating descriptions"
+url: https://data.norge.no/getting-started/publishing/howto
 ---
 
 # Hvordan publisere beskrivelser

@@ -4,7 +4,7 @@ For å bruke registreringsløsningen i på Data.norge.no, er det viktig å ha ri
 
 ## Innlogging med ID-porten/Altinn
 
-For å få tilgang til registreringsløsningen på Data.norge.no, må du ha en av følgende rettigheter:
+For å få tilgang til registreringsløsningen eller administrasjonsgrensesnittet for høsting på Data.norge.no, må du ha en av følgende rettigheter:
 
 - «Felles datakatalog - alle kataloger - lesetilgang»
 - «Felles datakatalog - alle kataloger - skrivetilgang»
@@ -20,8 +20,8 @@ Felles brukerhåndtering er en autentiserings- og autorisasjonstjeneste levert a
 
 ## Innlogging for ansatte i Skatteetaten
 
-Ansatte i Skatteetaten kan logge inn med .... (Beskrivelse fra Kristine og Ragnhild venter)
+Ansatte i Skatteetaten kan logge inn med interne brukere. Rutiner for tildeling av tilgang organiseres internt i Skatteetaten.
 
 ## Innlogging for ansatte i Brønnøysundsregistrene
 
-Ansatte i Brønnøysundsregistrene kan logge inn med .... (Beskrivelse fra Synne venter)
+Ansatte i Brønnøysundsregistrene kan logge inn med interne brukere. Rutiner for tildeling av tilgang organiseres internt i Brønnøysundsregistrene.

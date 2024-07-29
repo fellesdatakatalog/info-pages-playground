@@ -1,21 +1,43 @@
-# Komme i gang med publisering (introside)
+---
+info_no: Side om "Komme i gang - Publisere beskrivelser/kataloger"
+description: Skal gi overordnet informasjon om hvordan publisere beskrivelser/kataloger til data.norge.no
+url: https://data.norge.no/getting-started/publishing-data
+note: Vurder å slå sammen med "Creating descriptions"
+url: https://data.norge.no/getting-started/publishing (?)
+---
 
-Velkommen til Data.norge.no! Denne guiden vil hjelpe deg med å komme i gang med publisering av beskrivelser på Data.norge.no. For å publisere, må du ha de nødvendige tilgangene og rollene i Altinn, samt være innlogget med ID-porten (sikkerhetsnivå 3). Les videre for å lære hvordan du får tilgang, lager og publiserer beskrivelser.
+# Lage og publisere beskrivelser
+
+I denne guiden vil du lære
+
+- hvordan lage beskrivelser,
+- hvordan publisere beskrivelsene til data.norge.no, og
+- om hvilke tilganger du trenger.
+
+Det er to måter du kan lage og publisere databeskrivelser:
+
+1. Du lager beskrivelsen i korrekt format selv og registrerer et høsteendepunkt data.norge.no kan høste beskrivelsen fra.
+2. Du bruker data.norge.no sin registreringsløsning for å registrere beskrivelser.
+
+## 1. Høste fra eget endepunkt
+
+Om du ønsker å forvalte beskrivelsene selv, må du lage dem og tilgjengeliggjøre dem.
+
+[Hvordan lage beskrivelser]().
+
+[Hvordan registrere endepunkt for høsting](https://admin.fellesdatakatalog.digdir.no).
+
+## 2. Registreringsløsning på data.norge.no
+
+Data.norge.no tilbyr et grafisk grensesnitt for å lage beskrivelser av datasett, datatjenester, begrep og tjenester. Informasjonsmodeller og hendelser er foreløpig ikke støttet.
+Dette er en skjemaløsning som lar deg fylle ut relevante felt og som genererer beskrivelser i korrekt format som deretter automatisk høstes og publiseres til data.norge.no.
+
+[Mer informasjon om registreringsløsningen]().
 
 ## Første gang virksomheten tar i bruk løsningen
 
-Hvis dette er første gang virksomheten din tar i bruk registrerings- eller høsteløsningen, kan du finne informasjon om hvordan du kommer i gang på [Samarbeidsportalen](https://samarbeid.digdir.no/felles-datakatalog/ta-i-bruk-felles-datakatalog/1619).
+Hvis dette er første gang virksomheten din tar i bruk registrerings- eller høsteløsningen på data.norge.no, må bruksvilkårene godkjennes av en virksomhetsadministrator. Besøk [Samarbeidsportalen for mer informasjon](https://samarbeid.digdir.no/felles-datakatalog/ta-i-bruk-felles-datakatalog/1619).
 
 ## Tilganger
 
-Før du kan publisere beskrivelser på Data.norge.no, må du ha riktig rettighet eller rolle i Altinn. Innlogging krever bruk av ID-porten med sikkerhetsnivå 3. Alternativt kan du logge inn via Felles brukerhåndtering. For mer informasjon, les om [Tilgang og innlogging på Data.norge.no]().
-
-## Hvordan lage beskrivelser
-
-Beskrivelser kan opprettes på ulike måter. For manuell registrering, bruk vår [registreringsløsning](). Hvis du ønsker å forvalte datakatalogene selv, kan du lage en fil tilgjengelig på nettet og registrere endepunktet i høsterens adminløsning. Les mer om [hvordan lage beskrivelser]().
-
-## Hvordan publisere egenforvaltede kataloger
-
-Hvis du bruker vår registreringsløsning til å lage beskrivelser, blir disse automatisk høstet og publisert. For virksomheter som administrerer egne kataloger, må høsteendepunktet registreres i høsterens admin-grensesnitt. Se vår [publiseringsveiledning]() for detaljer.
-
-Vi støtter høsting av beskrivelser av datasett, datatjenester og datakataloger etter standarden DCAT-AP-NO, begrepsbeskrivelser etter SKOS-AP-NO-Begrep, informasjonsmodellbeskrivelser etter ModellDCAT-AP-NO, og beskrivelser av tjenester og hendelser etter CPSV-AP-NO.
+Før du kan registrere beskrivelser eller registrere endepunkt data.norge.no skal høste fra må du ha [riktig rettighet eller rolle i Altinn](./login.md), og være innlogget med ID-porten (sikkerhetsnivå 3).

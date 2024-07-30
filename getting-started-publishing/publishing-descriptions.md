@@ -7,13 +7,20 @@ url: https://data.norge.no/getting-started/publishing/howto
 
 # Hvordan publisere beskrivelser
 
-Har du brukt registreringsløsningen til å lage beskrivelser, blir katalogen automatisk lagt til for høsting. Ønsker du å trigge høsting manuelt, gjøres dette fra [admin-grensesnittet for høsting](https://admin.fellesdatakatalog.digdir.no/data-sources).
+Har du brukt registreringsløsningen til å lage beskrivelser, og publisert dem derifra, blir katalogen automatisk lagt til for høsting.
 
-Hvis du ikke har brukt registreringsløsningen, må høsteendepunktet registreres manuelt. Slik gjør du det:
+Ønsker du å starte en høsting av beskrivelsene dine manuelt, gjør du det fra [administrasjons-grensesnittet for høsting](https://admin.fellesdatakatalog.digdir.no/data-sources).
+Du må først tilgjengeliggjøre beskrivelsen i RDF-format på nettet, og registrere endepunktet i administrasjonsgrensesnittet. Slik gjør du det:
 
-## Registrere høsteendepunkt manuelt
+## Registrere høsteendepunkt
 
-**Før du begynner:** Sørg for at høsteendepunktet ditt er skrevet i et format som håndteres av RDF, og at du har de nødvendige tilgangene. Les mer om [hvordan skrive databeskrivelser]() og [hvordan få tilgang]().
+**Før du begynner:**
+
+- Høsteendepunktet må være tilgjengelig på nettet (eventuelt sikret med en API-nøkkel).
+- Dataen som returneres må være i et av [formatene data.norge.no støtter]().
+- Du må ha de nødvendige tilgangene for å bruke løsningen.
+
+Les mer om [hvordan skrive databeskrivelser]() og [hvordan få tilgang]().
 
 ### Steg 1: Logg inn og legg til datakilde
 
@@ -23,7 +30,11 @@ Logg inn i [admin-grensesnittet for høsting](https://admin.fellesdatakatalog.di
 
 ### Steg 2: Fyll ut skjemaet
 
-Fyll ut minst alle de obligatoriske feltene i skjemaet.
+Fyll ut alle de obligatoriske feltene i skjemaet.
+
+Det valgte formatet må samsvare med RDF-formatet beskrivelsen er i.
+
+"Navn på datakilde" brukes kun i oversiktsvisningen i administrasjonsgrensesnittet og vises ingen andre steder.
 
 ![Skjema](image-1.png)
 

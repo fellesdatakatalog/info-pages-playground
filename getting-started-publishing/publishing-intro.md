@@ -34,10 +34,12 @@ Dette er en skjemaløsning som lar deg fylle ut relevante felt og som genererer 
 
 [Mer informasjon om registreringsløsningen]().
 
-## Første gang virksomheten tar i bruk løsningen
+## Tilganger og bruksvilkår
 
-Hvis dette er første gang virksomheten din tar i bruk registrerings- eller høsteløsningen på data.norge.no, må bruksvilkårene godkjennes av en virksomhetsadministrator. Besøk [Samarbeidsportalen for mer informasjon](https://samarbeid.digdir.no/felles-datakatalog/ta-i-bruk-felles-datakatalog/1619).
+Før du kan registrere beskrivelser eller registrere endepunkt data.norge.no skal høste fra:
 
-## Tilganger
+- må du logge inn med ID-porten (sikkerhetsnivå 3),
+- må du ha [riktig rettighet eller rolle i Altinn](./login.md), og
+- må virksomheten ha godkjent bruksvilkårene. Dette gjøres første gang virksomheten tar løsningen i bruk.
 
-Før du kan registrere beskrivelser eller registrere endepunkt data.norge.no skal høste fra må du ha [riktig rettighet eller rolle i Altinn](./login.md), og være innlogget med ID-porten (sikkerhetsnivå 3).
+For mer info se [Samarbeidsportalen for mer informasjon](https://samarbeid.digdir.no/felles-datakatalog/ta-i-bruk-felles-datakatalog/1619).

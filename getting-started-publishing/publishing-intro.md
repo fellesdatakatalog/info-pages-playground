@@ -3,7 +3,7 @@ info_no: Side om "Komme i gang - Publisere beskrivelser/kataloger"
 description: Skal gi overordnet informasjon om hvordan publisere beskrivelser/kataloger til data.norge.no
 url: https://data.norge.no/getting-started/publishing-data
 note: Vurder å slå sammen med "Creating descriptions"
-url: https://data.norge.no/getting-started/publishing (?)
+url: https://data.norge.no/getting-started/about-publishing
 ---
 
 # Lage og publisere beskrivelser
@@ -25,14 +25,14 @@ Om du ønsker å forvalte beskrivelsene selv, må du lage dem og tilgjengeliggj�
 
 [Hvordan lage beskrivelser]().
 
-[Hvordan registrere endepunkt for høsting](https://admin.fellesdatakatalog.digdir.no).
+[Hvordan registrere endepunkt for høsting]().
 
 ## 2. Registreringsløsning på data.norge.no
 
 Data.norge.no tilbyr et grafisk grensesnitt for å lage beskrivelser av datasett, datatjenester, begrep og tjenester. Informasjonsmodeller og hendelser er foreløpig ikke støttet.
 Dette er en skjemaløsning som lar deg fylle ut relevante felt og som genererer beskrivelser i korrekt format som deretter automatisk høstes og publiseres til data.norge.no.
 
-[Mer informasjon om registreringsløsningen]().
+[Hvordan lage beskrivelser med registreringsløsningen]()
 
 ## Tilganger og bruksvilkår
 

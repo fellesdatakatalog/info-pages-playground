@@ -2,18 +2,17 @@
 info_en: Page about "Getting started - Creating descriptions"
 info_no: Side om "Komme i gang - beskrive data/lage beskrivelser"
 description: Skal gi overordnet informasjon om hvordan lage beskrivelser
-url: https://data.norge.no/getting-started/publishing/describing-data
+url: https://data.norge.no/getting-started/describing-data
 ---
 
 # Beskrive data
 
-1. [Du lager beskrivelsen selv i RDF-format](#1-lage-beskrivelserrdf-grafer-selv).
-2. [Du bruker registreringsløsningen til Data.norge.no](#2-registreringsløsning).
+1. [Du lager beskrivelsen selv i RDF-format](#1-lage-beskrivelserrdf-grafer-selv)
+2. [Du bruker registreringsløsningen til Data.norge.no](#2-registreringsløsning)
 
 ## Forarbeid: Rammeverk for informasjonsforvaltning og Orden i eget hus
 
-Uavhengig av hvilke metode du går for bør virksomheten få oversikt over hvilke data den sitter på.
-Digdir har laget en egen veileder, [Orden i eget hus](https://www.digdir.no/informasjonsforvaltning/veileder-orden-i-eget-hus/2716), for hvordan få til dette.
+Uavhengig av hvilke metode du går for bør virksomheten få oversikt over hvilke data den sitter på. Digdir har laget en egen veileder, [Orden i eget hus](https://www.digdir.no/informasjonsforvaltning/veileder-orden-i-eget-hus/2716), for hvordan få til dette.
 
 ## Spesifikasjoner/standarder
 
@@ -35,7 +34,9 @@ Bruk disse guidene for å lære mer om hvordan lage datasettbeskrivelser:
 - [Veileder for orden i eget hus - Steg 5: Beskrive](https://www.digdir.no/informasjonsforvaltning/steg-5-beskrive/2724)
 - [Kursmateriell til workshop i RDF og datasettbeskrivelser](https://github.com/fellesdatakatalog/sikt-workshop/blob/main/ressurshefte/ressurshefte.md)
 
-For øyeblikket har vi ikke veiledere for de andre type ressursene (begrep, informasjonmodeller, tjenester og hendelser), så her må man støtte seg på den aktuelle spesifikasjonen og eksemplene i den. Men alle beskrivelsene gjøres i RDF-format og eksemplene for datasettbeskrivelser har overføringsverdi til de andre typene.
+For de andre type ressursene (begrep, informasjonsmodeller, tjenester og hendelser) fins det eksempler på beskrivelser på [Data.norge.no sitt "Showroom"](https://data.norge.no/showroom/overview). Man kan også støtte seg på den aktuelle spesifikasjonen og eksemplene i den. De fleste av eksemplene er skrevet i RDF-formatet kalt Turtle og har overføringsverdi til de andre typene.
+
+Flere relevante ressurser er listet opp nederst på denne siden.
 
 ### Støttede RDF-formater
 
@@ -47,8 +48,6 @@ Når du lager beskrivelsene selv må du gjøre det i et RDF-format som støttes 
 - [JSON-LD](https://www.w3.org/TR/json-ld11/)
 - [N-Triples](https://www.w3.org/TR/n-triples/)
 - ([Notation3/N3](https://www.w3.org/TeamSubmission/n3/) som synonym for Turtle)
-
-De fleste av eksemplene i veilederne og spesifikasjonene er skrevet i Turtle.
 
 ### Validering av beskrivelser
 
@@ -77,9 +76,9 @@ Du kan velge om du vil publisere beskrivelsen til Data.norge.no, eller beholde d
 
 ## Når du bør velge hvilken fremgangsmåte?
 
-Dette fins det ikke et endelig svar på, men vi kan gi noen pekepinner.
+Dette fins det ikke et endelig svar på, men vi kan gi noen grunner til å velge det ene fremfor det andre.
 
-### Noen grunner til å lage og forvalte beskrivelsene selv:
+### Grunner til å lage og forvalte beskrivelsene selv:
 
 - Virksomheten er stor og forvaltningen av beskrivelsene er delegert ut til flere enkelt-team/enkeltpersoner.
 - Generering av RDF-grafene/beskrivelsene er del av et automatisert løp.
@@ -91,6 +90,7 @@ Dette fins det ikke et endelig svar på, men vi kan gi noen pekepinner.
 ### Grunner til å velge registreringsløsningen:
 
 - Virksomheten er liten og sitter på lite data.
+- Virksomheten har ikke anledning til å sette opp endepunkt Data.norge.no kan høste fra.
 - De ansvarlige i virksomheten ønsker en lavterskel måte å lage beskrivelser uten å sette seg inn i RDF.
 
 ## Ressurser

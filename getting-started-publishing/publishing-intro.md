@@ -42,4 +42,4 @@ Før du kan registrere beskrivelser eller registrere endepunkt data.norge.no ska
 - må du ha [riktig rettighet eller rolle i Altinn](./login.md), og
 - må virksomheten ha godkjent bruksvilkårene. Dette gjøres første gang virksomheten tar løsningen i bruk.
 
-For mer info se [Samarbeidsportalen for mer informasjon](https://samarbeid.digdir.no/felles-datakatalog/ta-i-bruk-felles-datakatalog/1619).
+Se [Samarbeidsportalen for mer informasjon](https://samarbeid.digdir.no/felles-datakatalog/ta-i-bruk-felles-datakatalog/1619).

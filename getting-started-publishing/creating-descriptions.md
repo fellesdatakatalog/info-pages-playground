@@ -23,7 +23,7 @@ Data.norge.no baserer seg på flere spesifikasjoner og standarder:
 - Informasjonsmodeller: [ModellDCAT-AP-NO](https://data.norge.no/specification/modelldcat-ap-no)
 - Tjenester og hendelser: [CPSV-AP-NO](https://data.norge.no/specification/cpsv-ap-no)
 
-Beskrivelsene som lages må være i henhold til spesifikasjonene.
+Beskrivelsene som lages må være i et RDF-format og i henhold til spesifikasjonene.
 Registreringsløsningen på Data.norge.no genererer RDF-grafer/beskrivelser i henhold til spesifikasjonen, men løsningen støtter ikke alle feltene som fins i spesifikasjonene.
 
 ## 1. Lage beskrivelser/RDF-grafer selv
@@ -103,3 +103,18 @@ Dette fins det ikke et endelig svar på, men vi kan gi noen grunner til å velge
 - [DCAT-AP 3](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService) fra EU som DCAT-AP-NO er basert på.
 - [DCAT 3](https://www.w3.org/TR/vocab-dcat-3/) fra W3C som DCAT-AP er basert på.
 - [Online trainings (SEMIC Support Centre)](https://joinup.ec.europa.eu/collection/semic-support-centre/online-trainings), kurs i vokabularene og spesifikasjonene fra EU.
+
+## Verktøy Data.norge.no tilbyr
+
+Data.norge.no har flere åpne biblioteker og verktøy som kan hjelpe i arbeidet med å lage beskrivelser.
+
+Kommer du over feil eller mangler i disse, opprett gjerne et issue i repoet eller send oss en e-post på <fellesdatakatalog@digdir.no>.
+
+- [datacatalogtordf](https://github.com/Informasjonsforvaltning/datacatalogtordf): Python-bibliotek som mapper datakataloger til en RDF-graf i henhold til DCAT-AP-NO.
+- [concepttordf](https://github.com/Informasjonsforvaltning/concepttordf): Python-bibliotek som mapper begrepskataloger til en RDF-graf i henhold til SKOS-AP-NO.
+- [modelldcatnotordf](https://github.com/Informasjonsforvaltning/modelldcatnotordf): Python-bibliotek som mapper informasjonsmodellkataloger til RDF-graf i henhold til ModellDCAT-AP-NO.
+- [servicecatalogtordf](https://github.com/Informasjonsforvaltning/servicecatalogtordf): Python-bibliotek som mapper tjeneste- og/eller hendelseskataloger til en RDF-graf i henhold til CPSV-AP-NO.
+- [oastodcat](https://github.com/Informasjonsforvaltning/oastodcat): Python-bibliotek som transformerer en OpenAPI-spesifikasjon til instans(er) av dcat:DataService (DCAT-AP-NO).
+- [jsonschematordf](https://github.com/Informasjonsforvaltning/jsonschematordf): Python-bibliotek som mapper fra JSON Schema til en RDF-graf i henhold til ModellDCAT-AP-NO.
+- [Valideringsverktøy](https://data.norge.no/validator): Validerer datasettbeskrivelser (DCAT-AP-NO), begrepsbeskrivelser (SKOS-AP-NO) og tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO) i RDF-format.
+- [SPARQL-brukergrensesnitt](https://data.norge.no/sparql): Verktøy som lar deg gjøre SPARQL-spørringer på innholdet i Data.norge.no.

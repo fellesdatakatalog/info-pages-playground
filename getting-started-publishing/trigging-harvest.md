@@ -1,12 +1,16 @@
-### Steg 1: Logg inn
+# Hvordan starte en høsting
 
-Logg inn i [admin-grensesnittet for høsting](https://admin.fellesdatakatalog.digdir.no/data-sources)
+Du må først ha [laget beskrivelser](TODO:lenke-til-guide) i Data.norge.no sin registreringsløsning, eller [satt opp et høsteendepunkt](TODO:lenke-til-guide) Data.norge.no kan høste fra.
 
-### Steg 2: Velg datakilde
+## Steg 1: Logg inn
+
+Logg inn i [administrasjonsgrensesnittet for høsting](https://admin.fellesdatakatalog.digdir.no/data-sources)
+
+## Steg 2: Finn datakilde
 
 Finn den datakilden du ønsker å starte høsting av.
 
-### Steg 3: Start høsting
+## Steg 3: Start høsting
 
 Klikk på knappen «Høst».
 

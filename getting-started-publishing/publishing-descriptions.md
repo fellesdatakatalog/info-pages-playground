@@ -7,28 +7,34 @@ url: https://data.norge.no/getting-started/setup-harvesting
 
 # Hvordan publisere beskrivelser
 
-Har du brukt registreringsløsningen til å lage beskrivelser, og publisert dem derifra, blir katalogen automatisk lagt til for høsting.
+Har du brukt registreringsløsningen til å lage beskrivelser, og publisert dem derifra, blir katalogen automatisk lagt til for høsting. Ønsker du å starte en høsting av beskrivelsene dine manuelt, gjør du det fra [administrasjons-grensesnittet for høsting](https://admin.fellesdatakatalog.digdir.no/data-sources).
 
-Ønsker du å starte en høsting av beskrivelsene dine manuelt, gjør du det fra [administrasjons-grensesnittet for høsting](https://admin.fellesdatakatalog.digdir.no/data-sources).
-Du må først tilgjengeliggjøre beskrivelsen i RDF-format på nettet, og registrere endepunktet i administrasjonsgrensesnittet. Slik gjør du det:
+[Hvordan starte høsting](TODO:lenke-til-beskrivelse-av-høstetrigging)
 
-## Registrere høsteendepunkt
+## Sette opp høsting: Registrere høsteendepunkt
 
-**Før du begynner:**
+Forvalter du beskrivelsene selv og vil publisere til Data.norge.no, må du sette opp høsting i [administrasjons-grensesnittet](https://admin.fellesdatakatalog.digdir.no/data-sources). Det gjør du slik:
 
-- Høsteendepunktet må være tilgjengelig på nettet (eventuelt sikret med en API-nøkkel).
-- Dataen som returneres må være i et av [formatene data.norge.no støtter]().
-- Du må ha de nødvendige tilgangene for å bruke løsningen.
+**Før du kan sette opp høsting av en ny katalog:**
 
-Les mer om [hvordan skrive databeskrivelser]() og [hvordan få tilgang]().
+- Høsteendepunktet som tjener beskrivelsene som må være tilgjengelig på nettet (eventuelt sikret med en API-nøkkel).
+- Dataen som returneres må være i et av [formatene Data.norge.no støtter]().
+- Dataen må være beskrevet i henhold til den aktuelle spesifikasjonen. Les mer om [hvordan lage beskrivelser]().
+- Du må ha de nødvendige tilgangene for å bruke løsningen. Les mer om [hvordan få tilgang]().
 
-### Steg 1: Logg inn og legg til datakilde
+### Steg 1: Logg inn
 
-Logg inn i [admin-grensesnittet for høsting](https://admin.fellesdatakatalog.digdir.no/data-sources) og klikk på knappen «Legg til datakilde».
+Logg inn i [admin-grensesnittet for høsting](https://admin.fellesdatakatalog.digdir.no/data-sources)
+
+### Steg 2: legg til datakilde
+
+Klikk på knappen «Legg til datakilde».
 
 ![Legg til datakilde](image.png)
 
-### Steg 2: Fyll ut skjemaet
+Merk: du må legge til en datakilde for hver ressurstype (datasett, begrep, tjeneste osv.) du ønsker å høste.
+
+### Steg 3: Fyll ut skjemaet
 
 Fyll ut alle de obligatoriske feltene i skjemaet.
 
@@ -40,16 +46,6 @@ Det valgte formatet må samsvare med RDF-formatet beskrivelsen er i.
 
 Klikk på knappen «Lagre». Den nye datakilden skal nå vises i administrasjonsløsningen.
 
-### Steg 3: Start høsting
+Data.norge.no vil nå høste fra kilden regelmessig og fange opp endringer.
 
-Klikk på knappen «Høst».
-
-![Høst](image-3.png)
-
-En melding vises om at høsteforespørselen er sendt.
-
-![Melding](image-4.png)
-
-Det kan ta noe tid, avhengig av størrelsen på katalogen din, før resultatet blir publisert og kan sees på [data.norge.no](https://data.norge.no).
-
-Takk for at du deler data!
+Les mer om hvordan [starte en høsting manuelt]().

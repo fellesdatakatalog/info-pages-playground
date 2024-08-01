@@ -52,3 +52,7 @@ Beskrivelsene du lager må være i et RDF-format som støttes av Data.norge.no:
 Når du har laget en beskrivelse kan du validere den med Data.norge.no sin [validator](https://data.norge.no/validator), som gir beskjed om eventuelle feil og mangler.
 
 Du kan publisere en beskrivelse som har korrekt syntaks men innholdsmessige mangler i henhold til spesifikasjonen. Den vil bare vises som mangelfull på nettsidene til Data.norge.no. Inneholder derimot beskrivelsen/RDF-grafen syntaktiske feil vil høstingen mislykkes og beskrivelsen vil ikke vises på Data.norge.no.
+
+## Neste steg: Publisere beskrivelsen
+
+Når du har laget en beskrivelse kan du [sette opp høsting](TODO:lenke-til-side) slik at den publiseres til Data.norge.no.

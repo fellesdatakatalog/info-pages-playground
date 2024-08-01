@@ -1,12 +1,10 @@
 ---
 info_no: Side om "Komme i gang - Publisere beskrivelser/kataloger"
 description: Skal gi overordnet informasjon om hvordan publisere beskrivelser/kataloger til data.norge.no
-url: https://data.norge.no/getting-started/publishing-data
-note: Vurder å slå sammen med "Creating descriptions"
-url: https://data.norge.no/getting-started/about-publishing
+url: https://data.norge.no/getting-started/publishing-intro
 ---
 
-# Lage og publisere beskrivelser
+# Kom i gang: Lage og publisere beskrivelser
 
 I denne guiden vil du lære
 

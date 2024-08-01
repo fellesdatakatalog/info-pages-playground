@@ -1,3 +1,7 @@
+---
+url: https://data.norge.no/getting-started/creating-descriptions-registration
+---
+
 # Lage beskrivelser i Registreringsløsning
 
 Data.norge.no sin [registreringsløsning](https://registrering.fellesdatakatalog.digdir.no) er en skjemaløsning som lar deg fylle ut relevante felt og som genererer beskrivelser i korrekt format. Når du publiserer beskrivelsene fra løsningen settes det automatisk opp høsting slik at de vises på Data.norge.no.

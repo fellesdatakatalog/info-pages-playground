@@ -1,3 +1,7 @@
+---
+url: https://data.norge.no/getting-started/triggering-harvest
+---
+
 # Hvordan starte en høsting
 
 Du må først ha [laget beskrivelser](TODO:lenke-til-guide) i Data.norge.no sin registreringsløsning, eller [satt opp et høsteendepunkt](TODO:lenke-til-guide) Data.norge.no kan høste fra.

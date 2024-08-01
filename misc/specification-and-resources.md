@@ -1,3 +1,7 @@
+---
+url: https://data.norge.no/getting-started/resources
+---
+
 # Spesifikasjoner, ressurser og verktøy
 
 ## Spesifikasjoner
@@ -24,8 +28,6 @@ Data.norge.no baserer seg på flere spesifikasjoner. Hvilken spesifikasjon du sk
 
 Data.norge.no har flere åpne biblioteker og verktøy som kan hjelpe i arbeidet med å lage beskrivelser.
 
-Kommer du over feil eller mangler i disse, opprett gjerne et issue i repoet eller send oss en e-post på <fellesdatakatalog@digdir.no>.
-
 - [datacatalogtordf](https://github.com/Informasjonsforvaltning/datacatalogtordf): Python-bibliotek som mapper datakataloger til en RDF-graf i henhold til DCAT-AP-NO.
 - [concepttordf](https://github.com/Informasjonsforvaltning/concepttordf): Python-bibliotek som mapper begrepskataloger til en RDF-graf i henhold til SKOS-AP-NO.
 - [modelldcatnotordf](https://github.com/Informasjonsforvaltning/modelldcatnotordf): Python-bibliotek som mapper informasjonsmodellkataloger til RDF-graf i henhold til ModellDCAT-AP-NO.
@@ -34,3 +36,5 @@ Kommer du over feil eller mangler i disse, opprett gjerne et issue i repoet elle
 - [jsonschematordf](https://github.com/Informasjonsforvaltning/jsonschematordf): Python-bibliotek som mapper fra JSON Schema til en RDF-graf i henhold til ModellDCAT-AP-NO.
 - [Valideringsverktøy](https://data.norge.no/validator): Validerer datasettbeskrivelser (DCAT-AP-NO), begrepsbeskrivelser (SKOS-AP-NO) og tjeneste- og hendelsesbeskrivelser (CPSV-AP-NO) i RDF-format.
 - [SPARQL-brukergrensesnitt](https://data.norge.no/sparql): Verktøy som lar deg gjøre SPARQL-spørringer på innholdet i Data.norge.no.
+
+Kommer du over feil eller mangler i disse, opprett gjerne et issue i repoet eller send oss en e-post på <fellesdatakatalog@digdir.no>.

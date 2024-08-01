@@ -6,9 +6,9 @@ Registreringsløsningen kan brukes for å lage beskrivelser av datasett, datatje
 
 **Før du begynner:**
 
-For å registrere beskrivelser i registreringsløsningen må du
+Du må
 
-- være logget inn via ID-porten, og
+- være logget inn i [registreringsløsningen](https://registrering.fellesdatakatalog.digdir.no) via ID-porten, og
 - ha de riktige tilgangene (minimum «Felles datakatalog - alle kataloger - skrivetilgang»).
 
 ## 1. Beskrive

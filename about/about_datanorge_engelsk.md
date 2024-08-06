@@ -7,7 +7,9 @@ url: https://data.norge.no/about
 
 ## About Data.norge.no
 
-Looking for data? It is now easier than ever to find what you need without having to navigate through a maze of public agencies!
+Looking for data? Data.norge.no makes it easy to find what you're looking for, without having to navigate through a maze of public agencies!
+
+## What is Data.norge.no?
 
 Data.norge.no provides a comprehensive overview of datasets, concepts, APIs, information models, services, and events in the public sector, including data with legal restrictions such as confidentiality or personal data. Here you can discover, assess, and use data with clear information about availability, data owners, and usage possibilities. You will learn whether the data is publicly available or requires specific permissions, as well as how the data is related and what it means. Data.norge.no also offers solutions for publishing datasets, concepts, APIs, information models, services, and events.
 

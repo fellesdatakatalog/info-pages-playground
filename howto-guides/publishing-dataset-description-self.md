@@ -71,18 +71,29 @@ Du bør bruke et tekstredigeringsprogram som ikke formaterer teksten. Microsoft 
 
 TODO: lenke til introduksjon om RDF
 
-### Tittel og beskrivelse
 
-Aller først må vi angi en unik identifikator for datasettbeskrivelsen, i form av en URI (Uniform Resource Identifer). For beskrivelsen av KI-prosjekter bruker vi URI-en `https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset`. Denne identifikatoren kan nå brukes av alle systemer overalt for å peke til nøyaktig den samme tingen.
+> **__Merk:__**
+For å spare plass i eksemplene har vi utelatt de såkalte prefiksene. Men alle eksemplene trenger at prefiksene listet opp rett under er definert for å være gyldig Turtle og RDF. Så bare forestill deg at disse linjene står før hvert eksempel. Til slutt kommer et komplett eksempel hvor vi også inkluderer prefiksene.
+```turtle
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+```
+
+
+### Identifikator for beskrivelsen (URI)
+Aller først må vi angi en unik identifikator for datasettbeskrivelsen, i form av en URI (Uniform Resource Identifer). Den bør være persistent og unik. URI-en kan peke til en faktisk nettressurs som er tilgjengelig på nett, men det er ikke nødvendig.
+
+For beskrivelsen av KI-prosjekter bruker vi URI-en `https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset`. Denne identifikatoren kan nå brukes av alle systemer overalt for å peke til nøyaktig den samme tingen.
+
+### Tittel og beskrivelse
 
 Vi vil nå legge til tittelen vi har forberedt, både på bokmål, nynorsk og engelsk. Da bruker vi egenskapen `dct:title`, og kan angi språket for teksten med `@nb` for bokmål, `@nn` for nynorsk og `@en` for engelsk. Resultatet blir slik:
 
 ```text/turtle
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dct: <http://purl.org/dc/terms/> . 
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   dct:title "Kunstig intelligens - oversikt over prosjekter i offentlig sektor"@nb ,
             "Kunstig intelligens - oversikt over prosjekt i offentleg sektor"@nn ,
@@ -93,11 +104,6 @@ Vi vil nå legge til tittelen vi har forberedt, både på bokmål, nynorsk og en
 Og tilsvarende vil vi legge til beskrivelsen på bokmål, nynorsk og engelsk. Til det bruker vi egenskapen `dct:description`:
 
 ```text/turtle
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix dct: <http://purl.org/dc/terms/> . 
-@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   dct:title "Kunstig intelligens - oversikt over prosjekter i offentlig sektor"@nb ,
             "Kunstig intelligens - oversikt over prosjekt i offentleg sektor"@nn ,
@@ -134,7 +140,7 @@ Beskrivelsen vil da se slik ut:
 
 #### Ressurser uten navn: Blanke noder
 
-I beskrivelsen over har kontaktinfoen fått en egen identifikator, `<https://data.digdir.no/contact/aiContactPoint>`, noe som egentlig er ganske unødvendig. Det eneste vi trenger er nemlig eposten og navnet på gruppen eller teamet i Digdir som kan kontaktes, kontaktpunktet trenger ikke en egen identifikator. For å unngå dette kan vi opprette en såkalt blank node, eller navnløs ressurs, ved hjelp av hakeparenteser `[...]`. Det vil da se slik ut:
+I beskrivelsen over har kontaktinfoen fått en egen identifikator, `<https://data.digdir.no/contact/aiContactPoint>`, noe som egentlig ikke er nødvendig. Det eneste vi trenger er nemlig eposten og navnet på gruppen eller teamet i Digdir som kan kontaktes, kontaktpunktet trenger ikke en egen identifikator. For å unngå dette kan vi opprette en såkalt blank node, eller navnløs ressurs, ved hjelp av hakeparenteser `[...]`. Det vil da se slik ut:
 
 
 ```text/turtle
@@ -149,13 +155,103 @@ I beskrivelsen over har kontaktinfoen fått en egen identifikator, `<https://dat
   .
 ```
 
-Dette sier akkurat det samme som beskrivelsen over, bare at `contactPoint` at her har vi sluppet å lage en URI for kontaktpunktet.
+Dette sier akkurat det samme som beskrivelsen over, men her slipper vi å lage en unødvendig URI for kontaktpunktet.
 
 
-### 
+### Nøkkelord og tema
+
+Datasettet kan knyttes til noen nøkkelord, for eksempel "kunstig intelligens" og "offentlig sektor". Vi bruker egenskapen `dct:keyword` og lager tekster på både på bokmål, nynorsk og engelsk.
+
+```text/turtle
+<https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
+  # ...
+  dct:keyword "kunstig intelligens"@nb , "kunstig intelligens"@nn , "artificial intelligence"@en,
+              "offentlig sektor"@nb , "offentleg sektor"@nn , "public sector"@en ;
+  .
+```
+
+I tillegg vil vi bruke egenskapen `dcat:theme` for å knytte datasettet til koder fra offentlige kodelister som EU forvalter. Vi vil bruke to koder her: den første er fra kodelisten Data Theme, `http://publications.europa.eu/resource/authority/data-theme/GOVE`, og den andre er fra kodelisten EuroVoc, `http://eurovoc.europa.eu/3030`. Den første sier at datasettet kan tematisk knyttes til offentlig sektor ("Government and public sector"), mens den andre koden peker til begrepet "Artifical Intelligence". Dette vil se ut slik i Turtle:
+
+```text/turtle
+<https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
+  # ...
+  dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE>,
+             <http://eurovoc.europa.eu/3030> ;
+  .
+```
+
+Alle datasettbeskrivelser må ha minst ett tema angitt med `dcat:theme`, og temaet må enten peke til kodelisten Data Theme eller kodelisten EuroVoc. I tillegg kan man peke til temaer fra kodelisten LOS som Digdir forvalter.
+
+For å finne aktuelle koder til din beskrivelse kan du se gjennom innholdet i kodelistene på:
+- [Oversikt over koder i Data Theme (op.europa.eu)](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme)
+- [Oversikt over koder i EuroVoc (op.europa.eu)](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141)
+
+I tillegg har vi skrevet en egen [side om hvordan bruke koder](TODO:legg-til-lenke) for å merke datasett tematisk. Ta gjerne en kikk der om du lurer på noe.
+
+### Geografisk avgrensing
+Ved hjelp av egenskapen `dct:spatial` og en eksisterende kode som representerer det geografiske området Norge kan vi uttrykket at datasettet er begrenset til Norge:
+
+```text/turtle
+<https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
+  # ...
+  dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
+  .
+```
+
+### Dataopphav og tilgang
+Vi vil si at datasettet er basert på innsamling fra tredjeparter, og at datasettet har åpen tilgang. For å beskrive datasettets opphav bruker vi egenskapen `prov:wasGeneratedBy` og peker til en kode som representerer "Innsamlet fra tredjeparter". For å uttrykke at at datasettet er åpent bruker vi egenskapen `dct:accessRights` og peker til eksisterende koder som representerer "Åpen data".
+
+```text/turtle
+<https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
+  # ...
+  prov:wasGeneratedBy <https://data.norge.no/vocabulary/provno#collectingFromThirdparty> ;
+  dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+  .
+```
+
+### Nettsiden
+
+Datasettet har en egen nettside som kan besøkes på <https://data.norge.no/kunstig-intelligens>. Det kan vi legge til i beskrivelsen med egenskapen `foaf:page`.
+
+```text/turtle
+<https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
+  # ...
+  foaf:page <https://data.norge.no/kunstig-intelligens> ;
+  .
+```
+
+
+### Komplett beskrivelse av datasettet:
+TODO: fyll ut
+
+### Tilgjengeliggjøring via distribusjon/filnedlasting
+
+Nå har vi oppgitt ganske mye informasjon *om* datasettet, men vi har fortsatt ikke beskrevet hvordan andre kan få tak i dataen og laste den ned. Siden vi tilbyr dataen som en fil fra Github kan vi beskrive det som en Distribusjon (`dcat:Distribution`) og legge til informasjon om den.
 
 > **__Merk:__**
-Vi skiller mellom Datasett, Distribusjon og Datatjeneste/API for å tydeliggjøre at et datasett kan tilgjengeliggjøres på flere måter. I denne sammenhengen er "datasett" en ganske abstrakt ting, mens de konkrete filene og endepunktene du kan hente dataen fra kalles for distribusjon og datatjeneste.
+Vi skiller mellom Datasett, Distribusjon og Datatjeneste/API for å tydeliggjøre at et datasett kan tilgjengeliggjøres på flere måter. I denne sammenhengen er datasett en ganske abstrakt ting, mens de konkrete filene og endepunktene du kan hente dataen fra kalles for distribusjon og datatjeneste.
+
+#### Beskrivelse og utgivelsesdato
+
+#### Lisens og språk
+
+### Format og mediatype
+
+#### Tilgangs-URL og nedlastings-URL
+
+
+- Datasettet er tilgjengelig som filnedlasting fra [Digdir sin Github-side](https://github.com/Informasjonsforvaltning/ai-project-service/blob/main/ai_projects_norwegian_state%20-%20Oversatt_v1.csv).
+- Datasettet tilbys/distribueres som CSV-fil
+- Datasettet er åpent og tilgjengelig og lisensiert med Apache-2.0-lisensen.
+- Innholdet i datasettet er på bokmål.
+- Datasettet ble utgitt 23. februar 2023.
+
+### Tilgjengeliggjøring via API
+
+
+### Knytte datasettet til en katalog
+
+
 
 
 Lage beskrivelsen (Katalog + Ressurser)

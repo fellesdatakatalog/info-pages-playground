@@ -4,7 +4,7 @@ Denne veiledningen tar deg gjennom alle trinnene som trengs for å komme i mål,
 
 - 1. Forberedelser og kartlegging.
 - 2. Hvordan lage selve datasettbeskrivelsen.
-- 3. Hvordan registrere et nettsted/endepunkt som data.norge.no kan hente beskrivelsen fra.
+- 3. Hvordan registrere en datakilde som data.norge.no kan hente beskrivelsen fra.
 - 4. Hvordan starte en høsting sånn at data.norge.no henter og publiserer beskrivelsen din.
 
 Underveis viser vi konkrete eksempler på hvordan gjøre de ulike stegene basert på datasettet "KI-prosjekter i offentlig sektor" fra Digdir. Disse eksemplene er rammet inn i en sånn boks som denne teksten er i. [TODO: legge til fargekoding].
@@ -451,6 +451,9 @@ Hele beskrivelsen av Datatjenesten/API-et ser da slik ut:
 
 ### Knytte datasettet til en katalog
 
+> **Merk:**
+> Hvis virksomheten din allerede har en datakatatalog som din datasettbeskrivelse må du bare sørge for at beskrivelsen du har laget blir inkludert i denne katalogen. Snakk med de som er ansvarlig for katalogen i virksomheten din for å finne ut hvordan gjøre det.
+
 Helt til slutt må vi knytte datasettene vi har beskrevet til en katalog, katalogen er obligatorisk. Noen virksomheter har én felles datakatalog for alle beskrivelsene de sitter på, mens andre virksomheter vil ha flere kataloger.
 
 I eksemplet her antar vi at Digdir har én datakatalog (`dcat:Catalog`) som inneholder alle datasettene Digdir har publisert informasjon om, og at URI-en til katalogen er `https://data.digdir.no/catalog/1` .
@@ -515,21 +518,64 @@ Den komplette beskrivelsen ser da slik ut:
   .
 ```
 
-## Sette opp endepunkt som tjener beskrivelsen
+## Sette opp datakilde som data.norge.no henter beskrivelsen fra
 
-Når vi nå har den fullstendige beskrivelsen må vi tilby den fra et endepunkt som er tilgjengelig. Endepunktet må serve filen som et gyldig RDF-format, f.eks. Turtle.
+Når vi nå har den fullstendige beskrivelsen må vi tilby den fra et datakilde som er tilgjengelig. Datakilden (eller endepunktet) må tilby (engelsk: _serve_) filen i et gyldig RDF-format, f.eks. Turtle. Da kan data.norge.no _høste_ ("hente") katalogen fra og vise innholdet på data.norge.no.
 
-Vi laster opp eksempel-filen med beskrivelse av KI-oversikten til Github.com.
+> **Merk:**
+> Hvis virksomheten din allerede har en datakatatalog som høstes av data.norge.no trenger du ikke å registrere et eget endepunkt for din ene datasettbeskrivelse. Du må bare sørge for at datasettbeskrivelsen din inkluderes i datakatalogen til virksomheten.
 
-## Registrere endepunktet i administrasjonsløsningen for høsting (data.norge.no)
+Vi laster opp eksempel-filen med beskrivelse av KI-oversikten til <https://github.com/Informasjonsforvaltning/ai-project-service> med filnavn `ai_projects_norwegian_state_dataset_description.ttl`. Selve filen kan da nås over nett på URL-en <https://raw.githubusercontent.com/Informasjonsforvaltning/ai-project-service/main/ai_projects_norwegian_state_dataset_description.ttl>. Denne URL-en skal vi bruke når vi registrerer datakilden.
 
-For at data.norge.no skal publisere beskrivelsen din må det vite hvor det skal hente beskrivelsen fra. Det kan du registrere i administrasjonsløsningen til data.norge.no (TODO:legg-til-lenke)
+## Registrere datakilde i administrasjonsløsningen
 
-### Registrere endepunkt og fylle ut felter
+Det neste vi må gjøre er å registrere datakilden i administrasjonløsningen til data.norge.no. Du logger inn på via siden <https://data.norge.no/publishing> hvor du trykker på "Logg inn for å administrere høsting".
 
-- Registrere endepunkt i administrasjonsløsning for høsting
-- Bilder, gjennomgang av skjema
+> **Merk**
+> Du må ha de riktige tilgangene og rettighetene for å kunne registrere datakilde på vegne av virksomheten. Les mer om hvordan få tilgang [TODO:lenke](info).
+
+### Legg til datakilde
+
+Når du er inne i administrasjonsløsningen, trykker du på knappen "Legg til datakilde".
+
+Sjekk at utgiveren er riktig, dette skal være virksomheten som utgir datasettet.
+
+![image](./media/data-source/publisher.png)
+
+> **Merk**
+> Om du ikke ser virksomheten din her må du sjekke at du har de riktige tilgangene og rettighetene på vegne av virksomheten.
+
+Katalog skal være "Datasett" og Datakildetype skal være "DCAT-AP-NO".
+
+![image](./media/data-source/catalog.png)
+
+![image](./media/data-source/data-source-type.png)
+
+Formatet (i vårt tilfelle) er Turtle, men her velger du RDF-formatet du tilbyr beskrivelsen i
+
+![image](./media/data-source/format.png)
+
+Navn på datakilde brukes kun i administrasjonsløsningen sin visning av alle datakildene. Den er kun ment for at virksomheten skal holde oversikt over datakildene sine og vises ikke utad.
+
+![image](./media/data-source/name.png)
+
+URL til datakilde skal være URL-en til der du tilbyr databeskrivelsen fra. I vårt tilfelle er det URL-en `https://raw.githubusercontent.com/Informasjonsforvaltning/ai-project-service/main/ai_projects_norwegian_state_dataset_description.ttl`.
+
+![image](./media/data-source/url.png)
+
+Vi har ingen autentisering på denne datakilde, så vi lar de feltene stå tomme:
+![image](./media/data-source/authentication.png)
+
+Deretter trykker du "Lagre".
 
 ## Starte høsting
 
-Når vi har registrert endepunktet kan vi starte en høsting, slik at data.norge.no henter siste versjon av beskrivelsen din fra endepunktet.
+Datakilden skal nå vises i listen over datakilder. Vår ser sånn slik ut:
+![image](./media/data-source/data-source-entry.png)
+
+> **Validering**
+> Du kan validere beskrivelsen ved å trykke "Valider". Du blir da tatt til en egen side på data.norge.no som har et validatorverktøy.
+
+Du kan starte en høsting ved å trykke på "Høst", da henter data.norge.no beskrivelsen og prosesserer den før den vises på data.norge.no. Denne prosessen kan ta noen minutter.
+
+Beskrivelsen av KI-oversikt-datasettet ligger her: [TODO:legg-til-lenke](https://data.norge.no/datasets)

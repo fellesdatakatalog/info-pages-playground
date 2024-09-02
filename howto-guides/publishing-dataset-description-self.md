@@ -92,7 +92,7 @@ For beskrivelsen av KI-prosjekter bruker vi URI-en `https://data.digdir.no/datas
 
 Vi vil nå legge til tittelen vi har forberedt, både på bokmål, nynorsk og engelsk. Da bruker vi egenskapen `dct:title`, og kan angi språket for teksten med `@nb` for bokmål, `@nn` for nynorsk og `@en` for engelsk. Resultatet blir slik:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   dct:title "Kunstig intelligens - oversikt over prosjekter i offentlig sektor"@nb ,
             "Kunstig intelligens - oversikt over prosjekt i offentleg sektor"@nn ,
@@ -102,7 +102,7 @@ Vi vil nå legge til tittelen vi har forberedt, både på bokmål, nynorsk og en
 
 Og tilsvarende vil vi legge til beskrivelsen på bokmål, nynorsk og engelsk. Til det bruker vi egenskapen `dct:description`:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   dct:title "Kunstig intelligens - oversikt over prosjekter i offentlig sektor"@nb ,
             "Kunstig intelligens - oversikt over prosjekt i offentleg sektor"@nn ,
@@ -124,7 +124,7 @@ I tillegg vil vi legge til informasjon om hvem som i Digdir som kan kontaktes an
 
 Beskrivelsen vil da se slik ut:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...tittel og beskrivelse utelatt
   dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
@@ -141,7 +141,7 @@ Beskrivelsen vil da se slik ut:
 
 I beskrivelsen over har kontaktinfoen fått en egen identifikator, `<https://data.digdir.no/contact/aiContactPoint>`, noe som egentlig ikke er nødvendig. Det eneste vi trenger er nemlig eposten og navnet på gruppen eller teamet i Digdir som kan kontaktes, kontaktpunktet trenger ikke en egen identifikator. For å unngå dette kan vi opprette en såkalt blank node, eller navnløs ressurs, ved hjelp av hakeparenteser `[...]`. Det vil da se slik ut:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...tittel og beskrivelse utelatt
   dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
@@ -159,7 +159,7 @@ Dette sier akkurat det samme som beskrivelsen over, men her slipper vi å lage e
 
 Datasettet kan knyttes til noen nøkkelord, for eksempel "kunstig intelligens" og "offentlig sektor". Vi bruker egenskapen `dct:keyword` og lager tekster på både på bokmål, nynorsk og engelsk.
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...
   dct:keyword "kunstig intelligens"@nb , "kunstig intelligens"@nn , "artificial intelligence"@en,
@@ -169,7 +169,7 @@ Datasettet kan knyttes til noen nøkkelord, for eksempel "kunstig intelligens" o
 
 I tillegg vil vi bruke egenskapen `dcat:theme` for å knytte datasettet til koder fra offentlige kodelister som EU forvalter. Vi vil bruke to koder her: den første er fra kodelisten Data Theme, `http://publications.europa.eu/resource/authority/data-theme/GOVE`, og den andre er fra kodelisten EuroVoc, `http://eurovoc.europa.eu/3030`. Den første sier at datasettet kan tematisk knyttes til offentlig sektor ("Government and public sector"), mens den andre koden peker til begrepet "Artifical Intelligence". Dette vil se ut slik i Turtle:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...
   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE>,
@@ -190,7 +190,7 @@ I tillegg har vi skrevet en egen [side om hvordan bruke koder](TODO:legg-til-len
 
 Ved hjelp av egenskapen `dct:spatial` og en eksisterende kode som representerer det geografiske området Norge kan vi uttrykket at datasettet er begrenset til Norge:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...
   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ;
@@ -201,7 +201,7 @@ Ved hjelp av egenskapen `dct:spatial` og en eksisterende kode som representerer 
 
 Vi vil si at datasettet er basert på innsamling fra tredjeparter, og at datasettet har åpen tilgang. For å beskrive datasettets opphav bruker vi egenskapen `prov:wasGeneratedBy` og peker til en kode som representerer "Innsamlet fra tredjeparter". For å uttrykke at at datasettet er åpent bruker vi egenskapen `dct:accessRights` og peker til eksisterende koder som representerer "Åpen data".
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...
   prov:wasGeneratedBy <https://data.norge.no/vocabulary/provno#collectingFromThirdparty> ;
@@ -213,7 +213,7 @@ Vi vil si at datasettet er basert på innsamling fra tredjeparter, og at dataset
 
 Datasettet har en egen nettside som kan besøkes på <https://data.norge.no/kunstig-intelligens>. Det kan vi legge til i beskrivelsen med egenskapen `foaf:page`.
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...
   foaf:page <https://data.norge.no/kunstig-intelligens> ;
@@ -267,7 +267,7 @@ Nå har vi oppgitt ganske mye informasjon _om_ datasettet, men vi har fortsatt i
 
 Vi må først si at datasettet **har** en distribusjon, til det bruker vi `dcat:distribution` som skal peke til en Distribusjonsressurs vi beskriver under.
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...
   dcat:distribution <https://data.digdir.no/datasets/ai_projects_norwegian_state_distribution> ;
@@ -284,7 +284,7 @@ Datasettet er tilgjengelig som filnedlasting fra Digdir sin Github-side, `https:
 
 Men vi vil også legge til noe mer informasjon, f.eks. direktelenken til filen: `https://raw.githubusercontent.com/Informasjonsforvaltning/ai-project-service/main/ai_projects_norwegian_state%20-%20Oversatt_v1.csv`, den kan vi peke til med `dcat:downloadURL`. Distribusjon-beskrivelsen vil da se slik ut:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_distribution> rdf:type dcat:Distribution ;
   dcat:accessURL <https://github.com/Informasjonsforvaltning/ai-project-service/blob/main/ai_projects_norwegian_state%20-%20Oversatt_v1.csv> ;
   dcat:downloadURL <https://raw.githubusercontent.com/Informasjonsforvaltning/ai-project-service/main/ai_projects_norwegian_state%20-%20Oversatt_v1.csv> ;
@@ -295,7 +295,7 @@ Men vi vil også legge til noe mer informasjon, f.eks. direktelenken til filen: 
 
 Vi legger til en tekstlig beskrivelse av distribusjonen, og når den ble utgitt, og bruker feltene `dct:description` og `dct:issued` til det:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_distribution> rdf:type dcat:Distribution ;
   dct:description "CSV-fil med oversikt over kunstig intelligens-prosjekter i offentlig sektor"@nb ;
   dct:issued "2023-02-23"^^xsd:date ;
@@ -306,7 +306,7 @@ Vi legger til en tekstlig beskrivelse av distribusjonen, og når den ble utgitt,
 
 Distribusjonen har en Apache 2.0-lisens, som vi angir med egenskapen `dct:license`. Denne egenskapen _skal_ peke til et kontrollert vokabular/kodeliste fra EU.
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_distribution> rdf:type dcat:Distribution ;
   dct:license <http://publications.europa.eu/resource/authority/licence/APACHE_2_0> ;
   .
@@ -323,7 +323,7 @@ Eksempler på noen andre lisenser fra EUs kodeliste er:
 Vi vil oppgi formatet til filen, som i vårt tilfelle er en CSV-fil; til det bruker vi egenskapen `dct:format` og peker til en kode i EU sitt vokabular "File Type" som representerer CSV.
 I tillegg er innholdet i datasett på norsk - bokmål. Vi angår det med egenskapen `dct:language` og peker til koden fra EU sitt vokabular som angir norsk - bokmål:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_distribution> rdf:type dcat:Distribution ;
   dct:format <http://publications.europa.eu/resource/authority/file-type/CSV> ;
   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ;
@@ -334,7 +334,7 @@ I tillegg er innholdet i datasett på norsk - bokmål. Vi angår det med egenska
 
 Hele distribusjons-beskrivelsen vil da se slik ut:
 
-```text/turtle
+```turtle
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -365,7 +365,7 @@ Mye av informasjonen er tilsvarende som for Distribusjonen, men Datatjeneste har
 
 For å si at datatjenesten tilbyr dataen for datasettet vi har beskrevet bruker vi egenskapen `dcat:servesDataset`. Merk at denne peker _fra_ Datatjenesten _til_ Datasettet:
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...
   .
@@ -381,7 +381,7 @@ Egenskapen `dcat:endpointURL` angir endepunktet API-et er tilgjengelig på; den 
 Her kan vi bruke gjenbruke noe av informasjonen for Datasettet, siden i dette tilfellet er det samme utgiver og samme kontaktpunkt for både datasett og API-et.
 Dette må du undersøke om er tilfellet for datasettet du skal beskrive.
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...
   .
@@ -403,7 +403,7 @@ Dette må du undersøke om er tilfellet for datasettet du skal beskrive.
 
 Vi vil igjen si her at datasettet er tilgjengelig med Apache-2.0-lisens. I tillegg tilbyr det fiktive API-et vårt dataen i XML- og JSON-format.
 
-```text/turtle
+```turtle
 <https://data.digdir.no/datasets/ai_projects_norwegian_state_dataset> rdf:type dcat:Dataset ;
   # ...
   .
@@ -421,7 +421,7 @@ Vi vil igjen si her at datasettet er tilgjengelig med Apache-2.0-lisens. I tille
 
 Hele beskrivelsen av Datatjenesten/API-et ser da slik ut:
 
-```text/turtle
+```turtle
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -460,7 +460,7 @@ I eksemplet her antar vi at Digdir har én datakatalog (`dcat:Catalog`) som inne
 
 Den komplette beskrivelsen ser da slik ut:
 
-```text/turtle
+```turtle
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .

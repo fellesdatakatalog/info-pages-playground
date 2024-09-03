@@ -1,32 +1,32 @@
 # Kodelister og hvordan bruke dem
 
-For flere av feltene i DCAT-AP-NO må du peke til en kode fra et kontrollert vokabular. Når du skal angi tema for et datasett `dcat:theme` må du for eksempel velge en kode fra EU sitt vokabular _Data Theme_. Kodene er organisert i lister eller hierarkiske strukturer, og er navngitt med en URI som andre RDF-ressurser.
+For flere av feltene i [DCAT-AP-NO](https://data.norge.no/specification/dcat-ap-no) må du peke til en kode fra et kontrollert vokabular. Når du skal angi tema for et datasett `dcat:theme` må du for eksempel velge en kode fra EU sitt vokabular _Data Theme_. Kodene er organisert i lister eller hierarkiske strukturer, og er navngitt med en URI som en hvilken som helst RDF-ressurs.
 
-Utfyllende oversikt over hvilke kontrollerte vokabularer som skal brukes i henhold til DCAT-AP-NO finner du her: [Kontrollerte-vokabularer-som-skal-brukes](https://data.norge.no/specification/dcat-ap-no#Kontrollerte-vokabularer-som-skal-brukes)
-
-og for kontrollerte vokabularer som bør og kan brukes finner du her: [Kontrollerte-vokabularer-som-bør-og-kan-brukes](https://data.norge.no/specification/dcat-ap-no#Kontrollerte-vokabularer-som-b%C3%B8r-og-kan-brukes)
+> **Tips:**
+> Standarden gir en fullstendig oversikt over hvilke kontrollerte vokabularer som [**skal** brukes](https://data.norge.no/specification/dcat-ap-no#Kontrollerte-vokabularer-som-skal-brukes), og hvilke som [**bør** og **kan** brukes](https://data.norge.no/specification/dcat-ap-no#Kontrollerte-vokabularer-som-b%C3%B8r-og-kan-brukes).
 
 ## Hvordan angi tema
 
-Blant annet Datasett og Datatjeneste bruker egenskapen `dcat:theme`.
+Datasett og Datatjeneste bruker egenskapen `dcat:theme`.
 
-For datasett **skal** man angi en kode fra et av EU sine vokubular Data Theme eller EuroVoc.
-Man bør også angi kode fra LOS.
+For datasett **skal** man angi en kode fra et av EU sine vokubular, _Data Theme_ eller _EuroVoc_.
+Man **bør** også angi kode fra LOS.
 
 ### Data Theme
 
-[Informasjon om Data Theme (op.europa.eu)](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/data-theme)
+| Informasjon om DataTheme                                                                                                                             |  Oversikt over alle kodene                                                                                                                                    | URI du skal bruke i beskrivelsen din                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [Gå til op.europa.eu](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/data-theme)  |  [Gå til op.europa.eu](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme) | `http://publications.europa.eu/resource/authority/data-theme/XXXX` |
 
-[Gå gjennom innholdet i Data Theme (op.europa.eu)](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme)
+Dette er en relativt liten kodeliste som inneholder noen svært generelle temaer.
 
-URI til bruk i beskrivelser: `http://publications.europa.eu/resource/authority/data-theme/`
+**Eksempler på noen koder fra Data Theme**
 
-Dette er en relativt liten kodeliste som inneholder noen svært generelle temaer, som:
-
-- ECON: Economy and finance
-- EDUC: Education, culture and sport
-- TECH: Science and technology
-- enda flere.
+| Kode | Forklaring                     | URI til bruk i beskrivelse                                         |
+| ---- | ------------------------------ | ------------------------------------------------------------------ |
+| ECON | *Economy and finance*          | `http://publications.europa.eu/resource/authority/data-theme/ECON` |
+| EDUC | _Education, culture and sport_ | `http://publications.europa.eu/resource/authority/data-theme/EDUC` |
+| TECH | *Science and technology*       | `http://publications.europa.eu/resource/authority/data-theme/TECH` |
 
 #### Eksempler på bruk
 
@@ -51,11 +51,20 @@ Dette er en relativt liten kodeliste som inneholder noen svært generelle temaer
 
 ### EuroVoc
 
-EuroVoc er en stor Thesauri med svært mange koder organisert i en hierarkisk struktur.
+EuroVoc er en stor Thesauri (et hierarki) med svært mange koder organisert i en hierarkisk struktur.
 
-[Informasjon om EuroVoc (op.europa.eu)](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc)
+| Informasjon om EuroVoc                                                                                                                            |  Oversikt over alle kodene                                                                                                        | URI du skal bruke i beskrivelsen din |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+| [Gå til op.europa.eu](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc)  |  [Gå til op.europa.eu](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141) | `http://eurovoc.europa.eu/XXXX`      |
 
-[Gå gjennom innholdet i EuroVoc (op.europa.eu)](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://eurovoc.europa.eu/100141)
+**Eksempler på noen koder fra EuroVoc**
+
+| Kode       | Forklaring                 | URI til bruk i beskrivelse            |
+| ---------- | -------------------------- | ------------------------------------- |
+| 4522       | *Maritime transport*       | `http://eurovoc.europa.eu/4522`       |
+| 2312       | _Energy supply_            | `http://eurovoc.europa.eu/2312`       |
+| 854        | *Equivalence of diplomas*  | `http://eurovoc.europa.eu/854`        |
+| c_61b6fae1 | *urban statistics*         | `http://eurovoc.europa.eu/c_61b6fae1` |
 
 #### Eksempler på bruk
 

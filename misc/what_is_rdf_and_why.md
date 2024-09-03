@@ -2,35 +2,9 @@
 
 Om du har kommet hit, er det kanskje fordi du lurer på hva alt snakket om RDF (_Resource Description Frameowork_) egentlig dreier seg om.
 
-## Hvorfor RDF?
-
-Det er noen grunner til at vi bruker akkurat RDF i beskrivelsene som publiseres til data.norge.no,
-RDF har nemlig noen fordeler som gjør at det egner seg godt til en datakatalog. Noen av disse er:
-
-1. Samhandlingsevne (eller interoperabilitet):
-
-   - a. RDF har et globalt navnerom, som betyr at vi kan snakke om de samme tingene på tvers av systemer.
-   - b. Ulike datasett kan enklere knyttes sammen (lenkede data).
-   - c. RDF Gjør det enkelt å gjenbruke av vokabularer og informasjon på tvers av systemer og løsninger.
-
-2. RDF er maskinlesbart og kan utveksles og forstås av ulike datasystemer.
-3. Semantikken følger med dataen når man bruker definerte egenskaper; dataen blir selvforklarende.
-4. RDF kan håndterer kompleks data som er vanskelig å definere i tabellform.
-5. RDF gjør distribuerte spørringer mulig.
-6. En stor verktøykasse er tilgjengelig (for modellering, validering, spørringer, distribuert data, med mer).
-
-> **Tips:**
-> Sjekk gjerne hva W3C selv [skriver om bruksområder for RDF](https://www.w3.org/TR/rdf11-primer/#section-use-cases).
-
-Data.norge.no henter beskrivelser fra mange ulike virksomheter, og da er det en fordel at vi kan basere oss på et maskinlesbart og standardisert format som RDF er.
-
-Den europeiske dataportalen [data.europa.eu](data.europa.eu) er basert på RDF og henter beskrivelser fra blant annet data.norge.no.
-
-Alle beskrivelsene av datakataloger til både data.norge.no og [data.europa.eu](https://data.europa.eu) følger en standard som heter [DCAT (Data Catalog Vocabulary)](https://www.w3.org/TR/vocab-dcat-3/) som er definert i RDF.
-
 ## Hva er RDF?
 
-Fritt oversatt betyr _Resource Description Framework_ noe sånt som _rammeverk for beskrivelse av ressurser_, og dette forklarer egentlig hele RDF:
+Så hva er da egentlig RDF? Fritt oversatt betyr _Resource Description Framework_ noe sånt som _rammeverk for beskrivelse av ressurser_, og dette forklarer egentlig hele RDF:
 
 - en _ressurs_ kan være hva som helst, inkludert dokumenter, nettsider, folk, fysiske objekter, og abstrakte konsepter og idéer.
 - med RDF _beskriver_ man ressursene og relasjonene mellom dem.
@@ -42,39 +16,66 @@ Fritt oversatt betyr _Resource Description Framework_ noe sånt som _rammeverk f
 Så med RDF kan man beskrive _ting_ og hvordan disse _tingene_ forholder seg til hverandre.
 Siden RDF er basert på web-teknologi kan du knytte dine beskrivelser til andres, og vi snakker da om lenkede data.
 
+## Hvorfor RDF?
+
+Det er noen grunner til at vi bruker akkurat RDF i beskrivelsene som publiseres til data.norge.no,
+RDF har nemlig noen fordeler som gjør at det egner seg godt til en datakatalog. Noen av disse er:
+
+1. Samhandlingsevne (eller interoperabilitet):
+
+   - a. RDF har et globalt navnerom, som betyr at vi kan snakke om de samme tingene på tvers av systemer.
+   - b. Ulike beskrivelser (som datasett og begrep) kan enklere knyttes sammen (lenkede data).
+   - c. RDF Gjør det enkelt å gjenbruke av vokabularer og informasjon på tvers av systemer og løsninger.
+
+2. RDF er maskinlesbart og kan utveksles og forstås av ulike datasystemer.
+3. Semantikken følger med dataen når man bruker klasser og egenskaper definert i RDF; dataen blir selvforklarende.
+4. RDF kan håndtere kompleks data som er vanskelig å definere i tabellform.
+5. RDF gjør distribuerte spørringer mulig.
+6. En stor verktøykasse er tilgjengelig (for modellering, validering, spørringer, distribuert data, med mer).
+
+> **Tips:**
+> Sjekk gjerne hva W3C selv [skriver om bruksområder for RDF](https://www.w3.org/TR/rdf11-primer/#section-use-cases).
+
+Data.norge.no henter beskrivelser fra mange ulike virksomheter, og da er det en fordel at vi kan bruke et maskinlesbart og standardisert format som RDF.
+
+Den europeiske dataportalen [data.europa.eu](data.europa.eu) er basert på RDF og henter beskrivelser fra blant annet data.norge.no. Det betyr at data.norge.no må tilby den i RDF.
+
+Alle beskrivelsene av datakataloger til både data.norge.no og [data.europa.eu](https://data.europa.eu) følger en standard som heter [DCAT (Data Catalog Vocabulary)](https://www.w3.org/TR/vocab-dcat-3/) som er definert i RDF.
+
 ## Byggeklossene i RDF
 
 ### Trippelet
 
-Med RDF kan vi komme med _utsagn_, eller _fakta_ om ressurser, og disse utsagnene er alltid på samme form:
+I RDF kan vi komme med _utsagn_, eller _fakta_ om ressurser, og disse utsagnene er alltid på samme form:
 
 `<subjekt> <predikat> <objekt>`
 
-Subjektet og objektet er ressursene vi sier noe om, mens predikatet sier noe om relasjonen mellom subjektet og predikatet. Noen eksempler på tripler er:
+Subjektet og objektet er ressursene vi sier noe om, mens predikatet sier noe om relasjonen mellom subjektet og predikatet. Noen eksempler på tripler (i pseudokode) er:
 
+- `<Leonardo da Vinci> <ble født> <15. april 1452>`
 - `<Leonardo da Vinci> <var> <en maler>`
 - `<Mona Lisa> <er malt av> <Leonardo da Vinci>`
-- `<Leonardo da Vinci> <ble født> <15. april 1452>`
 
-Sånn sett er datamodellen i RDF veldig enkel, for alle data i RDF består bare av en samling av slike tripler.
+Sånn sett er datamodellen i RDF veldig enkel: all data består bare av en samling av slike tripler.
 
 > **Merk:**
-> Siden triplene utgjør forbindelser mellom tingene vi beskriver, lager det en _graf_, som illustrert i figuren under. Vi kan bruke uttrykket _RDF-graf_ som synonym for "en samling med tripler".
+> Siden et trippel definerer en relasjon mellom subjektet og objektet, utgjør en samling av tripler en _graf_, som illustrert i figuren under. Vi kan bruke uttrykket _RDF-graf_ som synonym for "en samling med tripler".
 
 ![En RDF-graf, med noen påstander om da Vinci](./content/rdf/da_vinci_graph_ex.svg)
 
 ### Ressurser trenger et navn: URI
 
-Når vi skal beskrive _en ressurs_ i RDF er vi nødt til å vite hvilken ressurs det er vi snakker om, og derfor gir vi alle ressurser i RDF navn i form av en URI.
+Når vi skal beskrive _en ressurs_ i RDF er vi nødt til å vite hvilken ressurs det er snakk om, og derfor gir vi ressurser navn i form av en URI.
 `http://dbpedia.org/resource/Leonardo_da_Vinci` er et eksempel på en slik URI, som peker til ressursen "Leonardo da Vinci" hos DBpedia.
 
 En URI, eller _Unique Resource Identifier_, er en global og unik identifikator, og dette er grunnen til at man bruker URI-er for å navngi ressurser i RDF: da kan hvem som helst, hvor som helst bruke URI-en og vite at de snakker om samme ting.
-Dette skiller seg for eksempel fra typiske ID-er i databasesystemer, eller gateadresser som kun er unik i innenfor et postnummer eller kommune.
+Dette skiller seg for eksempel fra typiske ID-er i databasesystemer, eller gateadresser som er unik kun innenfor en kommune.
 
 > **Merk**:
 > Det kan i blant være tvetydig om en URI peker til _beskrivelsen av tingen_ eller _tingen i seg selv_.
-> For eksempel ville det vært absurd å si at DBpedia-siden om Leonardo da Vinci _er_ Leonardo da Vinci selv.
+> For eksempel ville det vært rart å si at DBpedia-siden om Leonardo da Vinci _er_ Leonardo da Vinci selv.
 > Allikevel er dette et vanlig mønster å følge i RDF, særlig når det er snakk om beskrivelser av personer.
+> Når det gjelder datasettbeskrivelser er praksis derimot at URI-en til en instans av `dcat:Dataset` peker til _datasettbeskrivelsen_ og _ikke_ den fysiske forekomsten av datasettet.
 
 ### Verdier ("literals")
 
@@ -85,7 +86,7 @@ I tillegg til URI-er kan en beskrivelse i RDF bestå av verdier som blant annet 
 
 ## Modellere Ada Lovelace
 
-La oss vise med et litt større eksempel, som vi også skriver ut i RDF-syntaksen som kalles Turtle. Her er noen påstander, eller utsagn, om personen Ada Lovelace:
+La oss vise med et litt større eksempel hvor vi har noen påstander, eller utsagn, om personen Ada Lovelace:
 
 ```
 <AdaLovelace> <er av type> <Person>
@@ -103,18 +104,22 @@ Det kan vi også tegne opp som denne grafen:
 
 ![Ada Lovelace](./content/rdf/ada_lovelace_graph.svg)
 
-### Turtle - en RDF-syntaks
+Dette vil nå skrive i et gyldig RDF-format kalt Turtle (eller "serialiseringsformat" for å være helt presis).
 
-Turtle er et konkrekt språk for å lage RDF-grafer. Kort oppsummert:
+### Turtle - et RDF-format
 
-- En URI skrives med "<" og ">", slik: `<https://example.org>`
-- Tekstverdier skrives med anførselstegn: `"en tekst"`
-- Man kan angi typen til en verdi, f.eks. heltall: `"1"^^<http://www.w3.org/2001/XMLSchema#integer>`, eller dato: `"2024-06-05"^^<http://www.w3.org/2001/XMLSchema#date>`
-- Du kan angi språket til teksten: `"An english text"@en` eller `"En tekst på bokmål"@nb`.
+Turtle er et konkret språk for å lage RDF-grafer. Kort oppsummert:
 
-Vi bruker ressurser som allerede er definert av andre, f.eks. RDF, Schema.org eller Friend of a friend (FOAF). Dette er kjente vokabularer, så alle systemer som baserer seg på disse vokabularene, vil da være bedre i stand til å forstå beskrivelsen vår av Ada Lovelace.
+- Du skriver en URI med "<" og ">", slik: `<https://example.org>`
+- Du skriver tekstverdier med anførselstegn: `"en tekst"`
+- Du kan angi typen til en verdi, for eksempel heltall: `"1"^^<http://www.w3.org/2001/XMLSchema#integer>`, eller dato: `"2024-06-05"^^<http://www.w3.org/2001/XMLSchema#date>`
+- Du kan angi språket til teksten: `"An english text"@en` eller `"Ei tekst på nynorsk"@nn`.
 
-Ved hjelp de vokabularene kan vi da lage grafen som beskriver Ada Lovelace i RDF-syntaksen Turtle:
+#### Eksempel
+
+Vi bruker ressurser som allerede er definert av andre, som RDF-navnerommet, Schema.org eller _Friend of a friend_ (FOAF). Dette er kjente vokabularer, så alle systemer som baserer seg på disse vokabularene, vil da være bedre i stand til å forstå beskrivelsen vår av Ada Lovelace.
+
+Beskrivelsen ser slik ut i Turtle:
 
 ```turtle
 <https://example.org/people/adaLovelace>   <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>   <http://xmlns.com/foaf/0.1/Person> .
@@ -124,14 +129,14 @@ Ved hjelp de vokabularene kan vi da lage grafen som beskriver Ada Lovelace i RDF
 <https://example.org/people/adaLovelace>   <https://schema.org/knowsAbout>                     "programmering"@nb .
 ```
 
-#### Prefikser/navnerom
+### Prefikser/navnerom
 
 Med prefikser (forkortelser) kan vi erstatte URL-ene med prefiksen vi har definert.
 F.eks. kan vi skrive `foaf` i stedet for `<http://xmlns.com/foaf/0.1/>`.
 
 Og om vi vil bruke egenskapen "navn", `<http://xmlns.com/foaf/0.1/name>` trenger vi kun skrive `foaf:name`.
 
-Her er noen kjente og ofte brukte navnerom (i tillegg til noen vi trenger til datasettbeskrivelser):
+Her er noen kjente og ofte brukte navnerom (i tillegg til et egendefinert, ment for eksemplene på denne siden):
 
 ```turtle
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -142,16 +147,11 @@ Her er noen kjente og ofte brukte navnerom (i tillegg til noen vi trenger til da
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <https://schema.org/> .
 
-@prefix cv:     <http://data.europa.eu/m8g/> .
-@prefix dcat:   <http://www.w3.org/ns/dcat#> .
-@prefix dcatap: <http://data.europa.eu/r5r> .
-@prefix dcatno: <https://data.norge.no/vocabulary/dcatno#> .
-
-# Egendefinert prefiks for eksemplene her
+# Egendefinert prefiks for eksemplene her:
 @prefix people: <https://example.org/people/> .
 ```
 
-#### ...forenklet beskrivelse
+### ...forenklet beskrivelse
 
 Med prefiksene kan vi forenkle beskrivelsen av Ada Lovelace
 
@@ -175,7 +175,7 @@ I stedet for å skrive hele URI-en `<https://example.org/people/adaLovelace>` ka
 
 Men dette er bare en syntaktisk snarvei for å skrive URI-en, og det er fortsatt på formen subjekt, predikat, objekt.
 
-#### ... enda mer forenklet
+### ... enda mer forenklet
 
 Når vi gjentar subjektet kan det skrives om til
 
@@ -189,7 +189,7 @@ people:adaLovelace    rdf:type               foaf:Person ;
 
 Hvert utsagn som gjenbruker subjektet avsluttes med `;`. Vi avslutter hele bolken med `.` som vanlig.
 
-#### Med flere verdier på samme predikat
+### Med flere verdier på samme predikat
 
 > **Tips**:
 > Man kan legge inn kommentarer i Turtle med tegnet `#`; da ignoreres det som er bak `#`-tegnet.
@@ -212,7 +212,7 @@ people:adaLovelace   rdf:type        foaf:Person ;
 
 Hvert utsagn som gjenbruk subjekt+predikat avsluttes med `,`.
 
-#### Resultat
+### Resultat
 
 I Turtle kan vi da gå fra den første beskrivelsen som består av eksplisitte tripler, til en mer forkortet og menneskelesbar versjon.
 
@@ -264,18 +264,20 @@ Da kan vi lage blanke noder ved hjlpe av hakeparenteser `[` og `]`, og oppgi nav
 people:adaLovelace rdf:type foaf:Person ;
     # ...kommentert vekk
     schema:children [
-      rdf:type foaf:Person ;
+      a foaf:Person ;
       foaf:name "Byron" ;
     ] ,
     [
-      rdf:type foaf:Person ;
+      a foaf:Person ;
       foaf:name "Anna Isabella" ;
     ] ,
     [
-      rdf:type foaf:Person ;
+      a foaf:Person ;
       foaf:name "Ralph Gordon" ;
     ] .
 ```
+
+> **Tips:** `a` er en forkortelse for `rdf:type` i Turtle.
 
 ## RDF-serialiseringer/syntakser
 
